@@ -107,7 +107,6 @@
   },
   "name":"galloway_gbjam12",
   "resources":[
-    {"id":{"name":"Credits","path":"notes/Credits/Credits.yy",},},
     {"id":{"name":"base_gbjam12_en_base","path":"objects/base_gbjam12_en_base/base_gbjam12_en_base.yy",},},
     {"id":{"name":"input_controller_object","path":"objects/input_controller_object/input_controller_object.yy",},},
     {"id":{"name":"obj_base_enemy_shot","path":"objects/obj_base_enemy_shot/obj_base_enemy_shot.yy",},},
