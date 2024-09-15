@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Script_spawnlists_neomagiko",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_spawnlists_neomagiko",
+  "parent":{
+    "name":"NeoMagiko",
+    "path":"folders/Scripts/NeoMagiko.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

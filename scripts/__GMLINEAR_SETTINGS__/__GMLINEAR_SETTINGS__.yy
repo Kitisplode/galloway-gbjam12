@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__GMLINEAR_SETTINGS__",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__GMLINEAR_SETTINGS__",
+  "parent":{
+    "name":"GMLinear",
+    "path":"folders/Extensions/GMLinear/Libraries_config/GMLinear.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

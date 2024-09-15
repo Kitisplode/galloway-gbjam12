@@ -1,0 +1,14 @@
+Credits List:
+Galloway Games
+	jope
+	adam
+	sora
+	knight
+	shaunak
+	prism
+	pik
+	
+tools:
+	GameMaker Studio 2
+	GMLinear
+	Input6

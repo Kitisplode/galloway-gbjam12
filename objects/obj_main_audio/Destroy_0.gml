@@ -1,0 +1,2 @@
+ds_list_destroy(list_music_intros);
+ds_list_destroy(list_music_loops);
