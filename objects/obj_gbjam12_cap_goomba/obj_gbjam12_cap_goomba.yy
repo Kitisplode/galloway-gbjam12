@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gbjam12_en_goomba",
+  "%Name":"obj_gbjam12_cap_goomba",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gbjam12_en_goomba",
+  "name":"obj_gbjam12_cap_goomba",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Game Objects/gbjam12/Enemies.yy",
+    "name":"Caps",
+    "path":"folders/Objects/Game Objects/gbjam12/Player/Caps.yy",
   },
   "parentObjectId":{
-    "name":"obj_gbjam12_en__base",
-    "path":"objects/obj_gbjam12_en__base/obj_gbjam12_en__base.yy",
+    "name":"obj_gbjam12_cap__base",
+    "path":"objects/obj_gbjam12_cap__base/obj_gbjam12_cap__base.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

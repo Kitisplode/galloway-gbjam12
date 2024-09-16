@@ -1,22 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gbjam12_player_item_mask_shot",
+  "%Name":"obj_gbjam12_cap__base",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_gbjam12_player","path":"objects/obj_gbjam12_player/obj_gbjam12_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_gbjam12_en__base","path":"objects/obj_gbjam12_en__base/obj_gbjam12_en__base.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_base_enemy","path":"objects/obj_base_enemy/obj_base_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gbjam12_player_item_mask_shot",
+  "name":"obj_gbjam12_cap__base",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Game Objects/gbjam12/Player.yy",
+    "name":"Caps",
+    "path":"folders/Objects/Game Objects/gbjam12/Player/Caps.yy",
   },
   "parentObjectId":{
-    "name":"obj_shot_player",
-    "path":"objects/obj_shot_player/obj_shot_player.yy",
+    "name":"obj_base_player",
+    "path":"objects/obj_base_player/obj_base_player.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,10 +35,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_gb12_player_item_mask_shot",
-    "path":"sprites/spr_gb12_player_item_mask_shot/spr_gb12_player_item_mask_shot.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

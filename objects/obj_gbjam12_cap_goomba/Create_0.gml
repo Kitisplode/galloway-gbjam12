@@ -4,10 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-cap_index = obj_gbjam12_cap_goomba;
+object_base = obj_gbjam12_en_goomba;
 
-anim_speed = 0.10;
-
-hp_max = 2;
-hp = hp_max;
-
+anim_speed = 0.1;

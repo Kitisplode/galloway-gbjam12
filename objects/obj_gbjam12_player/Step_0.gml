@@ -55,42 +55,36 @@ if (!paused)
 		if (hurt_timer > 0) _temp_friction = 0.9;
 		velocity[0] *= _temp_friction;
 		velocity[1] *= _temp_friction;
+	}
 		
-		if (can_act && scr_Input_Read(id_input, input_possess, 0) && !instance_exists(obj_gbjam12_player_item_mask_shot))
-		{
-			action = 2;
-			var _temp_id = instance_create_depth(x,y, depth - 1, obj_gbjam12_player_item_mask_shot);
-			_temp_id.velocity[0] = cos(degtorad(direction_aiming)) * 200;
-			_temp_id.velocity[1] = sin(degtorad(direction_aiming)) * -200;
-			_temp_id.creator_ID = id;
-			//scr_player_shoot(2, direction_facing * 90, 14,
-			//				 1, 300,
-			//				 0,0);
-		}
+	if (can_act && scr_Input_Read(id_input, input_possess, 0) && !instance_exists(obj_gbjam12_player_item_mask_shot))
+	{
+		action = 2;
+		var _temp_id = instance_create_depth(x,y, depth - 1, obj_gbjam12_player_item_mask_shot);
+		_temp_id.velocity[0] = cos(degtorad(direction_aiming)) * 200;
+		_temp_id.velocity[1] = sin(degtorad(direction_aiming)) * -200;
+		_temp_id.creator_ID = id;
 	}
 	
-	if (can_act)
+	if (can_act && scr_Input_Read(id_input, input_act, 0))
 	{
-		if (scr_Input_Read(id_input, input_act, 0))
+		action = 1;
+		play_sound(snd_gbjam12_player_sword, 1, 0, 1, 1,0.25);
+		if (item_id == id)
 		{
-			action = 1;
-			play_sound(snd_gbjam12_player_sword, 1, 0, 1, 1,0.25);
-			if (item_id == id)
-			{
-				item_id = instance_create_depth(x,y, depth - 1, obj_gbjam12_player_item);
-				item_id.dom_id = id;
-			}
-			item_id.swing_angle = (direction_facing * 90 + 270) mod 360;
-			item_id.swing_direction = 1;
-			item_id.swung_amount = 0;
-			item_id.swinging = true;
-			if (direction_facing == 0)
-			{
-				item_id.swing_angle = (direction_facing * 90 + 90) mod 360;
-				item_id.swing_direction = -1;
-			}
-			anim_frame = 0;
+			item_id = instance_create_depth(x,y, depth - 1, obj_gbjam12_player_item);
+			item_id.dom_id = id;
 		}
+		item_id.swing_angle = (direction_facing * 90 + 270) mod 360;
+		item_id.swing_direction = 1;
+		item_id.swung_amount = 0;
+		item_id.swinging = true;
+		if (direction_facing == 0)
+		{
+			item_id.swing_angle = (direction_facing * 90 + 90) mod 360;
+			item_id.swing_direction = -1;
+		}
+		anim_frame = 0;
 	}
 	
 	holding_a = scr_Input_Read(id_input, input_possess, 1);

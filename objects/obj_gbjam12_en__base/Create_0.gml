@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+cap_index = obj_gbjam12_cap__base;
+
 // Set up physics
 axis_max_speed = r3(300, 300, 1200);
 up_vector = r3(0,0,1);
@@ -28,3 +30,5 @@ friction_ground = 0.7;
 
 death_effect_index = spr_gb12_ef_pop;
 delayed_death_effect = true;
+
+can_possess = true;
