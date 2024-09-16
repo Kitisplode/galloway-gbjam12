@@ -5,6 +5,14 @@ if (!paused)
 {
 	if (phase == 0)
 	{
+		if (instance_exists(creator_ID) && creator_ID.holding_a)
+		{
+			if (creator_ID.direction_input > -1)
+			{
+				velocity[0] += cos(degtorad(creator_ID.direction_input)) * 30;
+				velocity[1] -= sin(degtorad(creator_ID.direction_input)) * 30;
+			}
+		}
 		timer -= scr_get_tick_length();
 		if (timer <= 0) phase = 1;
 	}
@@ -32,7 +40,6 @@ if (!paused)
 			var _temp_dir = point_direction(x,y, creator_ID.x,creator_ID.y);
 			velocity[0] += cos(degtorad(_temp_dir)) * 50;
 			velocity[1] -= sin(degtorad(_temp_dir)) * 50;
-			axis_max_speed = r3(200, 200, 1200);
 		}
 	}
 }

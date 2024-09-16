@@ -10,6 +10,7 @@ accel_run = 80;
 friction_ground = 0.7;
 
 // Set up input
+direction_input = -1;
 input_possess = "a";
 input_act = "b";
 with(id_input)
@@ -27,6 +28,7 @@ item_id = id;
 hurt_timer = 0;
 hurt_time = 0.15;
 
+holding_a = false;
 
 // Set up physics
 axis_max_speed = r3(100, 100, 1200);

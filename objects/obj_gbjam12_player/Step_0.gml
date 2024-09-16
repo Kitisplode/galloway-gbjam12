@@ -36,11 +36,11 @@ if (!paused)
 		}
 	}
 	
-	var _direction_input = id_input.direction_input;
-	if (_direction_input > -1 && can_move)
+	direction_input = id_input.direction_input;
+	if (direction_input > -1 && can_move)
 	{
 		var _accel = accel_run;
-		direction_aiming = _direction_input;
+		direction_aiming = direction_input;
 		
 		scr_player_snap_to_4_directions(direction_aiming);
 		direction = direction_facing * 90;
@@ -92,6 +92,8 @@ if (!paused)
 			anim_frame = 0;
 		}
 	}
+	
+	holding_a = scr_Input_Read(id_input, input_possess, 1);
 }
 
 event_inherited();
