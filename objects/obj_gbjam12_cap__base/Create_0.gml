@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-object_base = obj_gbjam12_en__base;
+enemy_index = obj_gbjam12_en__base;
 
 direction_aiming = 270;
 direction_facing = 3;
@@ -31,7 +31,7 @@ hurt_time = 0.15;
 axis_max_speed = r3(100, 100, 1200);
 up_vector = r3(0,0,1);
 r3_clone(up_vector, normal_vector);
-force_gravity = 50;
+force_gravity = 30;
 
 slide_slopes_distance = 2;
 slide_around_blocks = true;

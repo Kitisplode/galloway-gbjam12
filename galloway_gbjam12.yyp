@@ -490,6 +490,7 @@
     {"id":{"name":"msk_gb12_player","path":"sprites/msk_gb12_player/msk_gb12_player.yy",},},
     {"id":{"name":"spr_block_oneway_up","path":"sprites/spr_block_oneway_up/spr_block_oneway_up.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
+    {"id":{"name":"spr_gb12_ef_dizzy","path":"sprites/spr_gb12_ef_dizzy/spr_gb12_ef_dizzy.yy",},},
     {"id":{"name":"spr_gb12_ef_pop","path":"sprites/spr_gb12_ef_pop/spr_gb12_ef_pop.yy",},},
     {"id":{"name":"spr_gb12_en_goomba","path":"sprites/spr_gb12_en_goomba/spr_gb12_en_goomba.yy",},},
     {"id":{"name":"spr_gb12_player_e_act","path":"sprites/spr_gb12_player_e_act/spr_gb12_player_e_act.yy",},},

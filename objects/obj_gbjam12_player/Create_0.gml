@@ -34,7 +34,7 @@ holding_a = false;
 axis_max_speed = r3(100, 100, 1200);
 up_vector = r3(0,0,1);
 r3_clone(up_vector, normal_vector);
-force_gravity = 50;
+force_gravity = 30;
 
 slide_slopes_distance = 2;
 slide_around_blocks = true;

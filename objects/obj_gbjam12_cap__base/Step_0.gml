@@ -50,7 +50,26 @@ if (!paused)
 	
 	// If the player presses the depossess button, pop the player out the way they're facing,
 	// recreate the original enemy (temporarily stunned), and destroy this object.
-	// TODO
+	if (can_act && scr_Input_Read(id_input, input_depossess, 0))
+	{
+		var _temp_id = instance_create_depth(x,y, depth, enemy_index);
+		_temp_id.z = z;
+		_temp_id.position[2] = position[2];
+		_temp_id.stunned = true;
+		
+		_temp_id = instance_create_depth(x,y, depth, obj_gbjam12_player);
+		_temp_id.z = z + 2;
+		_temp_id.position[2] = position[2] + 2;
+		_temp_id.direction_aiming = direction_aiming;
+		_temp_id.direction_facing = direction_facing;
+		_temp_id.velocity[0] = cos(degtorad(direction_facing * 90)) * 100;
+		_temp_id.velocity[1] = sin(degtorad(direction_facing * 90)) * -100;
+		_temp_id.velocity[2] = 250;
+		
+		instance_destroy();
+		
+		exit;
+	}
 	
 	// If the player presses the act button, perform this cap's action.
 	if (can_act && scr_Input_Read(id_input, input_act, 0))

@@ -13,5 +13,4 @@ if (invuln_timer > 0 && _temp_invuln_timer <= 0)
 	velocity[0] = cos(degtorad(_temp_direction)) * 200;
 	velocity[1] = -sin(degtorad(_temp_direction)) * 200;
 	hurt_timer = hurt_time;
-	
 }
