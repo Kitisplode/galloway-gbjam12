@@ -29,6 +29,11 @@ if (!paused)
 			//can_act = false;
 			can_move = false;
 		}
+		else if (action == 2)
+		{
+			can_act = false;
+			can_move = false;
+		}
 	}
 	
 	var _direction_input = id_input.direction_input;
@@ -51,11 +56,16 @@ if (!paused)
 		velocity[0] *= _temp_friction;
 		velocity[1] *= _temp_friction;
 		
-		if (can_act && scr_Input_Read(id_input, input_possess, 0))
+		if (can_act && scr_Input_Read(id_input, input_possess, 0) && !instance_exists(obj_gbjam12_player_item_mask_shot))
 		{
-			scr_player_shoot(2, direction_facing * 90, 14,
-							 1, 300,
-							 0,0);
+			action = 2;
+			var _temp_id = instance_create_depth(x,y, depth - 1, obj_gbjam12_player_item_mask_shot);
+			_temp_id.velocity[0] = cos(degtorad(direction_aiming)) * 200;
+			_temp_id.velocity[1] = sin(degtorad(direction_aiming)) * -200;
+			_temp_id.creator_ID = id;
+			//scr_player_shoot(2, direction_facing * 90, 14,
+			//				 1, 300,
+			//				 0,0);
 		}
 	}
 	

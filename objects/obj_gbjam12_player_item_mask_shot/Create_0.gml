@@ -4,8 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-sideways_vel = 3;
-sideways_cycle = 0;
-sideways_rate = 30;
+anim_speed = 0.15;
+draw_2d_z = true;
 
-anim_speed = 1;
+timer = 0.25;
+phase = 0;
+dies_offscreen = false;

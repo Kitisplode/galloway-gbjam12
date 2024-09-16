@@ -39,7 +39,7 @@ else
 		}
 	}
 	// If we're performing a basic action, use the act sprites.
-	else if (action == 1)
+	else if (action > 0)
 	{
 		anim_loop = false;
 		anim_speed = 0.18;

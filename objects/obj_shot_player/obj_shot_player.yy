@@ -11,8 +11,8 @@
   "name":"obj_shot_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game Objects",
-    "path":"folders/Objects/Game Objects.yy",
+    "name":"_Base",
+    "path":"folders/Objects/Game Objects/_Base.yy",
   },
   "parentObjectId":{
     "name":"par_physics",
