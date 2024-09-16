@@ -8,7 +8,9 @@ if (!is_nan(global.player_spawn_x) && !is_nan(global.player_spawn_y) && !is_nan(
 	_temp_y = global.player_spawn_y;
 	_temp_z = global.player_spawn_z;
 }
-var _temp_id = instance_create_depth(_temp_x, _temp_y, OBJECT_DEPTHS.PLAYER, player_object_index);
+var _temp_index = player_object_index;
+if (global.player_spawn_index > 0) _temp_index = global.player_spawn_index;
+var _temp_id = instance_create_depth(_temp_x, _temp_y, OBJECT_DEPTHS.PLAYER, _temp_index);
 _temp_id.position[2] = _temp_z;
 _temp_id.z = _temp_z;
 _temp_id.direction_facing = global.player_spawn_direction / 90;

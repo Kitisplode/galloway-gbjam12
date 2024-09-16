@@ -4,8 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-sideways_vel = 3;
-sideways_cycle = 0;
-sideways_rate = 30;
+enemy_index = obj_gbjam12_en_goomba;
 
-anim_speed = 1;
+anim_speed = 0.1;

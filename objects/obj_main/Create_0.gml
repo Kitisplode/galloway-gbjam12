@@ -86,5 +86,6 @@ global.player_spawn_x = NaN;
 global.player_spawn_y = NaN;
 global.player_spawn_z = NaN;
 global.player_spawn_direction = 270;
+global.player_spawn_index = obj_gbjam12_player;
 
 randomize();

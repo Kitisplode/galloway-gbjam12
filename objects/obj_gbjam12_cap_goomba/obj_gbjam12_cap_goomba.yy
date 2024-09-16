@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shot_player_wave",
+  "%Name":"obj_gbjam12_cap_goomba",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shot_player_wave",
+  "name":"obj_gbjam12_cap_goomba",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game Objects",
-    "path":"folders/Objects/Game Objects.yy",
+    "name":"Caps",
+    "path":"folders/Objects/Game Objects/gbjam12/Player/Caps.yy",
   },
   "parentObjectId":{
-    "name":"obj_shot_player",
-    "path":"objects/obj_shot_player/obj_shot_player.yy",
+    "name":"obj_gbjam12_cap__base",
+    "path":"objects/obj_gbjam12_cap__base/obj_gbjam12_cap__base.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shot_01",
-    "path":"sprites/spr_shot_01/spr_shot_01.yy",
+    "name":"spr_gb12_en_goomba",
+    "path":"sprites/spr_gb12_en_goomba/spr_gb12_en_goomba.yy",
   },
   "spriteMaskId":null,
   "visible":true,

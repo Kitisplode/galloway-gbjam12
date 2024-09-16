@@ -14,3 +14,5 @@ damage = 1;
 piercing = false;
 
 death_effect = -1;
+
+dies_offscreen = true;
