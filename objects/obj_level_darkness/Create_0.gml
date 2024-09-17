@@ -5,6 +5,6 @@ surface_id = -1;
 
 depth = -5000;
 
-image_alpha = 0.8;
+image_alpha = 0.82;
 
 list_lights = ds_list_create();

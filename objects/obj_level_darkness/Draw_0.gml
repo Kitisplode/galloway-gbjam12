@@ -9,17 +9,26 @@ if (surface_id == -1 || !surface_exists(surface_id))
 if (surface_exists(surface_id))
 {
 	surface_set_target(surface_id);
-	draw_clear_alpha(c_black, 1);
+	draw_clear_alpha(c_black,1);
 	
 	for (var _i = 0; _i < ds_list_size(list_lights); _i++)
 	{
-		var _temp_id = ds_list_find_value(list_lights, _i);
+		var _temp_value = ds_list_find_value(list_lights, _i);
+		var _temp_id = _temp_value._id;
 		if (!instance_exists(_temp_id)) continue;
-		draw_circle_color(_temp_id.x-1, _temp_id.y - _temp_id.z, 14, c_ltgrey,c_dkgrey, 0);
+		if (_temp_value._light > 0)
+		{
+			gpu_set_blendequation(bm_eq_subtract);
+			draw_circle_color(_temp_id.x-1, _temp_id.y - _temp_id.z,
+							_temp_value._light + 2, c_dkgrey,c_dkgrey, 0);
+			draw_circle_color(_temp_id.x-1, _temp_id.y - _temp_id.z,
+							_temp_value._light, c_ltgrey,c_ltgrey, 0);
+			gpu_set_blendequation(bm_eq_add);
+		}
 		draw_sprite_ext(_temp_id.sprite_index, _temp_id.anim_frame,
-						_temp_id.x-1, _temp_id.y - _temp_id.z,
+						_temp_id.x, _temp_id.y - _temp_id.z,
 						_temp_id.image_xscale,_temp_id.image_yscale,
-						0, c_white, _temp_id.image_alpha);
+						_temp_id.image_angle, c_white, _temp_id.image_alpha);
 	}
 	
 	surface_reset_target();
