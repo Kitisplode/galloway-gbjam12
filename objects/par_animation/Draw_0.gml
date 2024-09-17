@@ -5,8 +5,8 @@ var _temp_y = position[1];
 if (draw_2d_z)
 {
 	_temp_y = position[1] - position[2];
-	//depth = -(position[2] + z_height);
-	depth = -position[1] * 100 - position[2];
+	depth = -(position[2] + z_height);
+	//depth = -position[1] * 100 - position[2];
 }
 
 draw_sprite_ext(sprite_index, anim_frame,

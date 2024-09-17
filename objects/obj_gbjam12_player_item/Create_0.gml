@@ -11,7 +11,7 @@ swing_range = 135;
 swinging = true;
 range = 6;
 
-draw_2d_z = true;
+//draw_2d_z = true;
 
 piercing = true;
 
