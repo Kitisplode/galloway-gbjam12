@@ -10,4 +10,4 @@ normal_vector = r3(0,-1,0);
 
 ds_list_add(global.list_solids, id);
 
-draw_2d_z = true;
+//draw_2d_z = true;

@@ -38,7 +38,7 @@ force_gravity = 30;
 
 slide_slopes_distance = 2;
 slide_around_blocks = true;
-slide_around_blocks_distance = 2;
+slide_around_blocks_distance = 8;
 
 ds_list_add(global.list_pushables, id);
 
