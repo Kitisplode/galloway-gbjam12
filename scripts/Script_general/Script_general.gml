@@ -123,3 +123,16 @@ function scr_animation_end_destroy()
 	instance_destroy();
 }
 
+function scr_darkness_add_light(_id, _light)
+{
+	if (instance_exists(obj_level_darkness))
+	{
+		for (var _i = 0; _i < ds_list_size(obj_level_darkness.list_lights); _i++)
+		{
+			var _temp = ds_list_find_value(obj_level_darkness.list_lights, _i);
+			if (_temp._id == _id) return;
+		}
+		
+		ds_list_add(obj_level_darkness.list_lights, {_id: _id, _light: _light});
+	}
+}

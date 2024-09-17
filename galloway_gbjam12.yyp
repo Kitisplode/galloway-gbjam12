@@ -128,6 +128,7 @@
     {"id":{"name":"obj_gbjam12_player","path":"objects/obj_gbjam12_player/obj_gbjam12_player.yy",},},
     {"id":{"name":"obj_input","path":"objects/obj_input/obj_input.yy",},},
     {"id":{"name":"obj_level_button","path":"objects/obj_level_button/obj_level_button.yy",},},
+    {"id":{"name":"obj_level_darkness","path":"objects/obj_level_darkness/obj_level_darkness.yy",},},
     {"id":{"name":"obj_level_debug","path":"objects/obj_level_debug/obj_level_debug.yy",},},
     {"id":{"name":"obj_level_switch","path":"objects/obj_level_switch/obj_level_switch.yy",},},
     {"id":{"name":"obj_main_audio","path":"objects/obj_main_audio/obj_main_audio.yy",},},

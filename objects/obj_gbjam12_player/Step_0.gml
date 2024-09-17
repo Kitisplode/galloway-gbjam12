@@ -88,6 +88,8 @@ if (!paused)
 	}
 	
 	holding_a = scr_Input_Read(id_input, input_possess, 1);
+	
+	scr_darkness_add_light(id, 14);
 }
 
 event_inherited();

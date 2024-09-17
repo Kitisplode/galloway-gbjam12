@@ -44,5 +44,7 @@ if (!paused)
 	}
 }
 
+scr_darkness_add_light(id, 0);
+
 // Inherit the parent event
 event_inherited();
