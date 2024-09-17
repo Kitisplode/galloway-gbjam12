@@ -59,7 +59,7 @@ enum TRANSITION_PAUSE
 // Standard object depths.
 enum OBJECT_DEPTHS
 {
-	TRANSITION = -9999,
+	TRANSITION = -99999,
 	PLAYER = 0,
 	ENEMY = 100
 };
@@ -76,6 +76,8 @@ global.list_solids = ds_list_create();
 global.list_pushables = ds_list_create();
 
 global.list_enemies = ds_list_create();
+
+global.map_switches = ds_map_create();
 
 global.paused = false;
 global.difficulty = 0;
