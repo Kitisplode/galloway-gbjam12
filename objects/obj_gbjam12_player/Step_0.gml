@@ -88,6 +88,14 @@ if (!paused)
 	}
 	
 	holding_a = scr_Input_Read(id_input, input_possess, 1);
+	
+	if (instance_exists(obj_level_darkness))
+	{
+		if (ds_list_find_index(obj_level_darkness.list_lights, id) == -1)
+		{
+			ds_list_add(obj_level_darkness.list_lights, id);
+		}
+	}
 }
 
 event_inherited();
