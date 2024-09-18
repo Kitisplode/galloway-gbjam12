@@ -70,11 +70,10 @@ if (!paused)
 	{
 		action = 1;
 		play_sound(snd_gbjam12_player_sword, 1, 0, 1, 1,0.25);
-		if (item_id == id)
-		{
-			item_id = instance_create_depth(x,y, depth - 1, obj_gbjam12_player_item);
-			item_id.dom_id = id;
-		}
+		if (item_id != id && instance_exists(item_id)) instance_destroy(item_id);
+		
+		item_id = instance_create_depth(x,y, depth - 1, obj_gbjam12_player_item);
+		item_id.dom_id = id;
 		item_id.swing_angle = (direction_facing * 90 + 270) mod 360;
 		item_id.swing_direction = 1;
 		item_id.swung_amount = 0;

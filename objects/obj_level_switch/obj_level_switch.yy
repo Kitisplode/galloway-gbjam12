@@ -17,8 +17,8 @@
     "path":"folders/Objects/Game Objects/_Base/Level.yy",
   },
   "parentObjectId":{
-    "name":"obj_block",
-    "path":"objects/obj_block/obj_block.yy",
+    "name":"par_game_object",
+    "path":"objects/par_game_object/par_game_object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

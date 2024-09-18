@@ -11,7 +11,7 @@ anim_speed = 0;
 
 z = -1;
 position[2] = z;
-z_height = 4;
+z_height = 1;
 
 //draw_2d_z = true;
 

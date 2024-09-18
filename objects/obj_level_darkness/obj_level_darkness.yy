@@ -13,7 +13,10 @@
     "name":"Level",
     "path":"folders/Objects/Game Objects/_Base/Level.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_game_object",
+    "path":"objects/par_game_object/par_game_object.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
