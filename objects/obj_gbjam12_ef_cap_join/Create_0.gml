@@ -4,10 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-cap_index = obj_gbjam12_cap_goomba;
+draw_2d_z = true;
 
-anim_speed = 0.10;
-
-hp_max = 2;
-hp = hp_max;
-
+movement_collision = false;
+anim_speed = 0.1;
+anim_frame = random(sprite_get_number(sprite_index));

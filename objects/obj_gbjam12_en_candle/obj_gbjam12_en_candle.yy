@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gbjam12_cap_goomba",
+  "%Name":"obj_gbjam12_en_candle",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gbjam12_cap_goomba",
+  "name":"obj_gbjam12_en_candle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Caps",
-    "path":"folders/Objects/Game Objects/gbjam12/Player/Caps.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Game Objects/gbjam12/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"obj_gbjam12_cap__base",
-    "path":"objects/obj_gbjam12_cap__base/obj_gbjam12_cap__base.yy",
+    "name":"obj_gbjam12_en__base",
+    "path":"objects/obj_gbjam12_en__base/obj_gbjam12_en__base.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gb12_en_goomba",
-    "path":"sprites/spr_gb12_en_goomba/spr_gb12_en_goomba.yy",
+    "name":"spr_gb12_en_candle",
+    "path":"sprites/spr_gb12_en_candle/spr_gb12_en_candle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

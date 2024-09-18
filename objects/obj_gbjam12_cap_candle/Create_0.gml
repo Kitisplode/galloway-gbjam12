@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-enemy_index = obj_gbjam12_en_goomba;
+enemy_index = obj_gbjam12_en_candle;
 
 anim_speed = 0.1;

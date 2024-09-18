@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_effect",
+  "%Name":"obj_gbjam12_ef_cap_join",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_effect",
+  "name":"obj_gbjam12_ef_cap_join",
   "overriddenProperties":[],
   "parent":{
     "name":"Effects",
-    "path":"folders/Objects/Game Objects/_Base/Effects.yy",
+    "path":"folders/Objects/Game Objects/gbjam12/Effects.yy",
   },
   "parentObjectId":{
-    "name":"par_animation",
-    "path":"objects/par_animation/par_animation.yy",
+    "name":"par_physics",
+    "path":"objects/par_physics/par_physics.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_gb12_ef_player_cap_join",
+    "path":"sprites/spr_gb12_ef_player_cap_join/spr_gb12_ef_player_cap_join.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
