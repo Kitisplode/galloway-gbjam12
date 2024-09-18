@@ -50,6 +50,11 @@ function scr_par_physics_Constrain_Velocity()
 	if (axis_max_speed[2] > 0 && abs(velocity[2]) > axis_max_speed[2]) velocity[2] = axis_max_speed[2] * sign(velocity[2]);
 }
 
+function scr_par_physics_Apply_Fractional_Velocity()
+{
+	
+}
+
 // Called from the par_physics_2d step method to apply movement.
 function scr_par_physics_Apply_Movement(_velocity)
 {
@@ -176,6 +181,10 @@ function scr_par_physics_Apply_Movement_Axis(_distance, _axis)
 			// Otherwise, move normally.
 			if (!_temp_moved)
 			{
+				if (script_exists(no_collision_script))
+				{
+					script_execute(no_collision_script, _axis);
+				}
 				_scr_par_physics_Actually_Move(_temp_move_sign);
 				_temp_moved = true;
 			}

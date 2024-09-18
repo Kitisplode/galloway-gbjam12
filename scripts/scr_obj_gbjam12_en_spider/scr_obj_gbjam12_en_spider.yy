@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_obj_gbjam12_en_spider",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_obj_gbjam12_en_spider",
+  "parent":{
+    "name":"gbjam12",
+    "path":"folders/Scripts/gbjam12.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

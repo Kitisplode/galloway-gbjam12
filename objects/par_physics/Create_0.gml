@@ -58,6 +58,8 @@ slide_slopes_distance = 1;
 
 // The script that is called when colliding with a block.
 collision_script = asset_get_index("scr_physics_collision_Stop_Moving")//-1;
+// The script that is called when trying to move while not colliding with any blocks.
+no_collision_script = -1;
 // The mesh to use for 3d precise collisions.
 collision_mesh = -1;
 

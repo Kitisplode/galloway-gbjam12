@@ -11,3 +11,6 @@ accel_run = 0;
 friction_ground = 0;
 
 is_on_ground = true;
+
+solid = true;
+ds_list_add(global.list_solids, id);

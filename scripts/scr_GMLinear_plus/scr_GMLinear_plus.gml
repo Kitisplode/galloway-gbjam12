@@ -50,6 +50,22 @@ function r3_get_total(_v1)
 	return abs(_v1[0]) + abs(_v1[1]) + abs(_v1[2]);
 }
 
+function r3_rotate(_v1, _angle, _vout=[0, 0, 0])
+{
+	var _temp_angle = degtorad(-_angle);
+	_vout[@0] = _v1[0] * cos(_temp_angle) - _v1[1] * sin(_temp_angle);
+	_vout[@1] = _v1[0] * sin(_temp_angle) - _v1[1] * cos(_temp_angle);
+	return _vout;
+}
+
+function r3_zero_out(_vout=[0,0,0])
+{
+	_vout[@0] = 0;
+	_vout[@1] = 0;
+	_vout[@2] = 0;
+	return _vout;
+}
+
 function tri_r3_translate(_tri, _v, _tri_out=[[0,0,0],[0,0,0],[0,0,0]])
 {
 	r3_add(_tri[0], _v, _tri_out[0]);
