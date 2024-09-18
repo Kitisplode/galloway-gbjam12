@@ -12,7 +12,8 @@ if (!invulnerable)
 }
 else
 {
-	play_sound(snd_enemy_hit_armor, 1, false, 1, sound_pitch,0.2 * sound_pitch);
+	//play_sound(snd_enemy_hit_armor, 1, false, 1, sound_pitch,0.2 * sound_pitch);
+	// TODO: add hit sound and hit effects
 }
 
 if (block_shots && other.damage < hp_max && !other.piercing)

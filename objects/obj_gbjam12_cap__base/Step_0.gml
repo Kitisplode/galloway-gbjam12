@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Inherit the parent event
-event_inherited();
 
 if (!paused)
 {
@@ -57,7 +55,7 @@ if (!paused)
 		_temp_id.position[2] = position[2];
 		_temp_id.stunned = true;
 		
-		_temp_id = instance_create_depth(x,y, depth, obj_gbjam12_player);
+		_temp_id = instance_create_depth(x + sprite_width / 2,y + sprite_height / 2, depth, obj_gbjam12_player);
 		_temp_id.z = z + 2;
 		_temp_id.position[2] = position[2] + 2;
 		_temp_id.direction_aiming = direction_aiming;
@@ -65,6 +63,9 @@ if (!paused)
 		_temp_id.velocity[0] = cos(degtorad(direction_facing * 90)) * 100;
 		_temp_id.velocity[1] = sin(degtorad(direction_facing * 90)) * -100;
 		_temp_id.velocity[2] = 250;
+		
+		
+		play_sound(snd_gbjam12_player_uncap, 1, 0, 1, 1,0);
 		
 		instance_destroy();
 		
@@ -77,3 +78,6 @@ if (!paused)
 		event_user(0);
 	}
 }
+
+// Inherit the parent event
+event_inherited();

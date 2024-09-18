@@ -9,4 +9,6 @@ if (other.can_possess)
 	instance_destroy(other);
 	if (instance_exists(creator_ID)) instance_destroy(creator_ID);
 	instance_destroy();
+	
+	play_sound(snd_gbjam12_player_cap, 1, 0, 1, 1,0);
 }

@@ -22,8 +22,8 @@ function scr_Place_Meeting_3d(_position, _other)
 // less precise collision has occurred.
 function scr_Check_For_Precise_Collision_3d(_position, _other)
 {
-	var _temp_this_has_mesh = ds_exists(collision_mesh, ds_type_list);
-	var _temp_other_has_mesh = ds_exists(_other.collision_mesh, ds_type_list);
+	var _temp_this_has_mesh = collision_mesh > -1 && ds_exists(collision_mesh, ds_type_list);
+	var _temp_other_has_mesh = collision_mesh > -1 && ds_exists(_other.collision_mesh, ds_type_list);
 	// If neither of them have collision meshes, there's no need for further checking.
 	if (!_temp_this_has_mesh && !_temp_other_has_mesh)
 	{

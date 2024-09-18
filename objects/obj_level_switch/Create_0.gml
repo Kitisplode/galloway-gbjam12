@@ -11,7 +11,7 @@ anim_speed = 0;
 
 z = -1;
 position[2] = z;
-z_height = 1;
+z_height = 16;
 
 //draw_2d_z = true;
 
@@ -23,5 +23,8 @@ if (!is_undefined(_switch_value))
 	button_pushed = _switch_value;
 	button_pushed_previous = button_pushed;
 }
+
+solid = true;
+ds_list_add(global.list_solids, id);
 
 list_hits = ds_list_create();

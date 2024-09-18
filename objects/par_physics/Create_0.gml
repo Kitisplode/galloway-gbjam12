@@ -42,6 +42,7 @@ apply_gravity_force = true;
 force_gravity = 0;
 // Keeps track of whether the object is on the ground or not.
 is_on_ground = false;
+is_on_ground_previous = false;
 
 // When true, the object will pass through one-way platforms, but only those oriented against their up vector...
 fall_through_oneway = false;

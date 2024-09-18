@@ -1,1 +1,1 @@
-z_height = 4;
+z_height = 24;
