@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-cap_index = obj_gbjam12_cap_spider;
+enemy_index = obj_gbjam12_en_spider;
 
 up_vector = r3(0,-1,0);
 r3_clone(up_vector, normal_vector);
@@ -16,3 +16,5 @@ collision_script = -1;
 friction_ground = 1;
 
 spider_speed = 40;
+
+normal_movement = false;

@@ -39,8 +39,8 @@
     "path":"sprites/spr_gb12_en_spider/spr_gb12_en_spider.yy",
   },
   "spriteMaskId":{
-    "name":"msk_gb12_player",
-    "path":"sprites/msk_gb12_player/msk_gb12_player.yy",
+    "name":"msk_gb12_en_spider",
+    "path":"sprites/msk_gb12_en_spider/msk_gb12_en_spider.yy",
   },
   "visible":true,
 }

@@ -1,23 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gbjam12_cap__base",
+  "%Name":"obj_gbjam12_cap_spider",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_base_enemy","path":"objects/obj_base_enemy/obj_base_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gbjam12_cap__base",
+  "name":"obj_gbjam12_cap_spider",
   "overriddenProperties":[],
   "parent":{
     "name":"Caps",
     "path":"folders/Objects/Game Objects/gbjam12/Player/Caps.yy",
   },
   "parentObjectId":{
-    "name":"obj_base_player",
-    "path":"objects/obj_base_player/obj_base_player.yy",
+    "name":"obj_gbjam12_cap__base",
+    "path":"objects/obj_gbjam12_cap__base/obj_gbjam12_cap__base.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -36,7 +35,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "spriteId":{
+    "name":"spr_gb12_en_spider",
+    "path":"sprites/spr_gb12_en_spider/spr_gb12_en_spider.yy",
+  },
+  "spriteMaskId":{
+    "name":"msk_gb12_en_spider",
+    "path":"sprites/msk_gb12_en_spider/msk_gb12_en_spider.yy",
+  },
   "visible":true,
 }

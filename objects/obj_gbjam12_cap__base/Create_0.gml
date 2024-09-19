@@ -11,6 +11,8 @@ direction_facing = 3;
 accel_run = 80;
 friction_ground = 0.7;
 
+normal_movement = true;
+
 // Input stuff
 direction_input = -1;
 input_depossess = "a";

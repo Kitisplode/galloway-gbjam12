@@ -17,7 +17,7 @@ if (!paused)
 		// Calculate the working velocity based on the tickrate.
 		velocity_working = r3_scale(velocity, scr_get_tick_length());
 
-		if (global.GAMEPLAY_ENABLE_MANUAL_FRACTIONAL_MOVEMENT)
+		if (enable_manual_fractional_movement)
 			scr_par_physics_Apply_Fractional_Velocity();
 		
 		var _temp_script = asset_get_index(movement_script);

@@ -6,8 +6,11 @@ event_inherited();
 // Vector tracking number of pixels the object moves per second on each axis.
 velocity = r3_zero();
 velocity_working = r3_zero();
+velocity_fractional = r3_zero();
 // Keeps track of the object's previous velocity.
 velocity_previous = r3_clone(velocity);
+
+enable_manual_fractional_movement = true;
 
 // Keeps track of the object's current speed (norm of the velocity vector)
 current_speed = 0;

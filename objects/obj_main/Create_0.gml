@@ -37,7 +37,7 @@ global.main_graphics = instance_create_depth(x,y,depth, obj_main_graphics);
 // ------------------------------------
 // Global gameplay constants & variables.
 global.GAMEPLAY_FRAMERATE = 60;
-global.GAMEPLAY_ENABLE_MANUAL_FRACTIONAL_MOVEMENT = false;
+//global.GAMEPLAY_ENABLE_MANUAL_FRACTIONAL_MOVEMENT = true;
 
 // Used to track transition states.
 enum TRANSITION_STATE
