@@ -4,11 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-hp_max = 99999;
-hp = hp_max;
+damage = 1;
 
-angle_based_on_velocity = true;
-
-sound_dead = -1;
-
-creator_id = id;
+slide_around_blocks = false;

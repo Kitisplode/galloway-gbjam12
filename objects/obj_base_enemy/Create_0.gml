@@ -36,3 +36,4 @@ if (depth == 0) depth = OBJECT_DEPTHS.ENEMY;
 ds_list_add(global.list_enemies, id);
 
 debug_killed = false;
+stunned = false;

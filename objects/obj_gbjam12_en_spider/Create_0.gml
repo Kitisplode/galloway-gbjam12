@@ -15,4 +15,7 @@ collision_script = -1;
 
 friction_ground = 1;
 
-spider_speed = 40;
+spider_speed = 35;
+shot_speed = 100;
+shot_time = 3;
+shot_timer = shot_time;

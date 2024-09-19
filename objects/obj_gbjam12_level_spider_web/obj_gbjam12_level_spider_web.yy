@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_level_darkness",
+  "%Name":"obj_gbjam12_level_spider_web",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_level_darkness",
+  "name":"obj_gbjam12_level_spider_web",
   "overriddenProperties":[],
   "parent":{
     "name":"Level",
     "path":"folders/Objects/Game Objects/gbjam12/Level.yy",
   },
   "parentObjectId":{
-    "name":"par_game_object",
-    "path":"objects/par_game_object/par_game_object.yy",
+    "name":"obj_block",
+    "path":"objects/obj_block/obj_block.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_gb12_en_spider_web",
+    "path":"sprites/spr_gb12_en_spider_web/spr_gb12_en_spider_web.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

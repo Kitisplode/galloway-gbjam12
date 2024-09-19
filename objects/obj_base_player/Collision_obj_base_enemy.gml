@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (invuln_timer <= 0 && other.damage > 0 && !other.stunned && other.hp > 0)
+if (invuln_timer <= 0 && other.damage > 0 && !other.stunned && other.hp > 0 && other.creator_id != id)
 {
 	if (hp > 0) hp -= other.damage;
 	invuln_timer = invuln_time;
