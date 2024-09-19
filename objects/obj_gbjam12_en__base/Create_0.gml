@@ -25,6 +25,7 @@ damage_time = 0.25;
 hurt_timer = 0;
 hurt_time = 0.075;
 knockedback_by_hits = true;
+hurt_knockback = 200;
 
 friction_ground = 0.7;
 

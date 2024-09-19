@@ -20,7 +20,8 @@ if (!paused)
 		shot_timer -= scr_get_tick_length();
 	}
 	else if (collision_line(x,y, x + up_vector[0] * 160,y + up_vector[1] * 144, obj_base_player, 0, 1)
-			&& !instance_exists(obj_gbjam12_en_spider_shot))
+			&& !instance_exists(obj_gbjam12_en_spider_shot)
+			&& hp > 0)
 	{
 		var _temp_id = instance_create_depth(x + up_vector[0] * 4,y + up_vector[1] * 4, depth + 1, obj_gbjam12_en_spider_shot);
 		var _temp_direction = point_direction(0,0, up_vector[0],up_vector[1]);
