@@ -9,7 +9,10 @@ if (draw_2d_z)
 	//depth = -position[1] * 100 - position[2];
 }
 
-draw_sprite_ext(sprite_index, anim_frame,
-				position[0] + shake[0], _temp_y + shake[1],
-				image_xscale + pump[0], image_yscale + pump[1],
-				image_angle, image_blend, image_alpha);
+if (sprite_exists(sprite_index))
+{
+	draw_sprite_ext(sprite_index, anim_frame,
+					position[0] + shake[0], _temp_y + shake[1],
+					image_xscale + pump[0], image_yscale + pump[1],
+					image_angle, image_blend, image_alpha);
+}

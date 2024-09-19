@@ -17,6 +17,7 @@
     {"name":"inst_575578A0","path":"rooms/rm_gbjam_03/rm_gbjam_03.yy",},
     {"name":"inst_75E9E3CC","path":"rooms/rm_gbjam_03/rm_gbjam_03.yy",},
     {"name":"inst_7FE51752","path":"rooms/rm_gbjam_03/rm_gbjam_03.yy",},
+    {"name":"inst_5ED3442","path":"rooms/rm_gbjam_03/rm_gbjam_03.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,6 +33,7 @@
         {"$GMRInstance":"v1","%Name":"inst_575578A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_575578A0","objectId":{"name":"obj_gbjam12_en_skeleton","path":"objects/obj_gbjam12_en_skeleton/obj_gbjam12_en_skeleton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":64.0,},
         {"$GMRInstance":"v1","%Name":"inst_75E9E3CC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75E9E3CC","objectId":{"name":"obj_gbjam12_en_skeleton","path":"objects/obj_gbjam12_en_skeleton/obj_gbjam12_en_skeleton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":32.0,},
         {"$GMRInstance":"v1","%Name":"inst_7FE51752","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7FE51752","objectId":{"name":"obj_gbjam12_en_skeleton","path":"objects/obj_gbjam12_en_skeleton/obj_gbjam12_en_skeleton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":32.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5ED3442","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5ED3442","objectId":{"name":"obj_gbjam12_hud","path":"objects/obj_gbjam12_hud/obj_gbjam12_hud.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":-16.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

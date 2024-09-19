@@ -3,6 +3,7 @@
 if (!invincible && invuln_timer <= 0 && other.damage > 0 && !other.stunned && other.hp > 0 && other.creator_id != id)
 {
 	if (hp > 0) hp -= other.damage;
+	global.player_hp -= other.damage;
 	invuln_timer = invuln_time;
 	//var _temp_id = instance_create_depth(x,y, -1000, obj_effect);
 	//_temp_id.sprite_index = spr_effect_ring_large;

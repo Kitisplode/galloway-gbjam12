@@ -61,6 +61,7 @@ enum TRANSITION_PAUSE
 enum OBJECT_DEPTHS
 {
 	TRANSITION = -99999,
+	HUD = -700,
 	EFFECT = -600,
 	PLAYER = -500,
 	ENEMY = -100
@@ -86,6 +87,7 @@ global.difficulty = 0;
 global.gameplay_speed_scale = 1.0;
 
 global.player_hp_max = 4;
+global.player_hp = global.player_hp_max;
 global.player_spawn_x = NaN;
 global.player_spawn_y = NaN;
 global.player_spawn_z = NaN;
