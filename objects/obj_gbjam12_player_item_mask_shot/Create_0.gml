@@ -14,3 +14,4 @@ dies_offscreen = false;
 axis_max_speed = r3(200, 200, 1200);
 
 movement_collision = false;
+damage = 0;

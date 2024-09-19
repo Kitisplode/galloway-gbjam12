@@ -5,6 +5,7 @@
 event_inherited();
 
 creator_ID = -1;
+creator_id = -1;
 
 is_boss = false;
 hp_max = 1;
@@ -27,9 +28,11 @@ death_next_phase = -1;
 block_shots = true;
 invulnerable = false;
 
-sound_damage = -1;
+sound_damage = snd_gbjam12_enemy_hurt;
+sound_damage_dead = snd_gbjam12_enemy_dead;
 sound_dead = -1;
 sound_pitch = 1;
+sound_volume = 0.75;
 
 if (depth == 0) depth = OBJECT_DEPTHS.ENEMY;
 

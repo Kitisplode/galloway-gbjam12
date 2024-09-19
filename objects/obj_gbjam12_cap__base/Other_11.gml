@@ -5,7 +5,7 @@ _temp_id.z = z;
 _temp_id.position[2] = position[2];
 _temp_id.stunned = true;
 		
-var _temp_x = x - sprite_get_xoffset(sprite_index) + sprite_width / 2;
+var _temp_x = x - sprite_get_xoffset(sprite_index) + sprite_width / 2 * image_xscale;
 var _temp_y = y - sprite_get_yoffset(sprite_index) + sprite_height / 2;
 _temp_id = instance_create_depth(_temp_x,_temp_y, depth, obj_gbjam12_player);
 _temp_id.z = z + 2;

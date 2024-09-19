@@ -8,6 +8,7 @@ event_inherited();
 
 if (_temp_hp > hp)
 {
+	ai_notices_player = true;
 	hurt_timer = hurt_time;
 	if (knockedback_by_hits)
 	{

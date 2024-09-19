@@ -13,14 +13,16 @@ if (!paused)
 		scr_obj_gbjam12_en_spider_on_no_wall_collision();
 	}
 	
+	if (stunned) shot_timer = shot_time;
+	
 	if (shot_timer > 0)
 	{
 		shot_timer -= scr_get_tick_length();
 	}
-	if (collision_line(x,y, x + up_vector[0] * 160,y + up_vector[1] * 144, obj_base_player, 0, 1)
-		&& !instance_exists(obj_gbjam12_en_spider_shot) && shot_timer <= 0)
+	else if (collision_line(x,y, x + up_vector[0] * 160,y + up_vector[1] * 144, obj_base_player, 0, 1)
+			&& !instance_exists(obj_gbjam12_en_spider_shot))
 	{
-		var _temp_id = instance_create_depth(x,y, depth + 1, obj_gbjam12_en_spider_shot);
+		var _temp_id = instance_create_depth(x + up_vector[0] * 4,y + up_vector[1] * 4, depth + 1, obj_gbjam12_en_spider_shot);
 		var _temp_direction = point_direction(0,0, up_vector[0],up_vector[1]);
 		_temp_id.velocity[0] = cos(degtorad(_temp_direction)) * shot_speed;
 		_temp_id.velocity[1] = -sin(degtorad(_temp_direction)) * shot_speed;

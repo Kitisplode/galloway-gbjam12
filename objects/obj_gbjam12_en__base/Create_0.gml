@@ -35,3 +35,5 @@ stunned = false;
 stunned_timer = 0;
 stunned_time = 5;
 can_possess = true;
+
+ai_notices_player = false;
