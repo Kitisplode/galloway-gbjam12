@@ -136,3 +136,56 @@ function scr_darkness_add_light(_id, _light)
 		ds_list_add(obj_level_darkness.list_lights, {_id: _id, _light: _light});
 	}
 }
+
+function scr_text_draw()
+{
+	var temp_alpha = image_alpha;
+	if (flash_rate > 0)
+	{
+		flasher += 1;
+		flasher = flasher mod flash_rate;
+		if (flasher > flash_rate / 2)
+			temp_alpha *= flash_alpha;
+	}
+
+	draw_set_font(font);
+	draw_set_halign(halign);
+	draw_set_valign(valign);
+	draw_text_transformed_color(x,y, text, scale,scale, image_angle,
+								image_blend,image_blend,image_blend,image_blend, temp_alpha);
+}
+
+
+function scr_create_text_string_ext(_pos_x, _pos_y, _depth,
+									_text, _type_rate, 
+									_font, _halign, _valign,
+									_scale, _color, _destroy_timer_in_seconds)
+{
+	var temp_text_ID = instance_create_depth(_pos_x, _pos_y, _depth, obj_text_string);
+	temp_text_ID.text = _text;
+	temp_text_ID.text_type_rate = _type_rate;
+	temp_text_ID.font = _font;
+	temp_text_ID.halign = _halign;
+	temp_text_ID.valign = _valign;
+	temp_text_ID.image_blend = _color;
+	temp_text_ID.scale = _scale;
+	temp_text_ID.destroy_timer = _destroy_timer_in_seconds;
+	return temp_text_ID;
+}
+
+function scr_create_text_paragraph_ext(_pos_x, _pos_y, _depth,
+									   _text, _type_rate, 
+									   _font, _halign, _valign,
+									   _scale, _color, _destroy_timer_in_seconds)
+{
+	var temp_text_ID = instance_create_depth(_pos_x, _pos_y, _depth, obj_text_paragraph);
+	temp_text_ID.text = _text;
+	temp_text_ID.text_type_rate = _type_rate;
+	temp_text_ID.font = _font;
+	temp_text_ID.halign = _halign;
+	temp_text_ID.valign = _valign;
+	temp_text_ID.image_blend = _color;
+	temp_text_ID.scale = _scale;
+	temp_text_ID.destroy_timer = _destroy_timer_in_seconds;
+	return temp_text_ID;
+}

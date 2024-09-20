@@ -3,6 +3,15 @@
 
 if (!paused)
 {
+	if (global.player_hp <= 0 && !instance_exists(par_transition))
+	{
+		var _temp_id = instance_create_depth(x,y, depth, obj_gbjam12_player_dead);
+		_temp_id.sprite_index = sprite_index;
+		scr_transition_fade_to_color(rm_gbjam_gameover, 1);
+		instance_destroy();
+		exit;
+	}
+	
 	// While hurt, the player cannot move.
 	if (hurt_timer > 0)
 	{
@@ -64,6 +73,7 @@ if (!paused)
 		_temp_id.velocity[0] = cos(degtorad(direction_aiming)) * 200;
 		_temp_id.velocity[1] = sin(degtorad(direction_aiming)) * -200;
 		_temp_id.creator_ID = id;
+		play_sound(snd_gbjam12_spider_spit, 1, 0, 1, 0.7, 0.25);
 	}
 	
 	if (can_act && scr_Input_Read(id_input, input_act, 0))

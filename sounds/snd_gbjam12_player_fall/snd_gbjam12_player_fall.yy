@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.90424,
+  "duration":0.89263,
   "name":"snd_gbjam12_player_fall",
   "parent":{
     "name":"gbjam12",
