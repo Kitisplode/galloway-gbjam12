@@ -32,7 +32,7 @@ global.enemy_kill_signal = false;
 // Other main controllers.
 global.main_audio = instance_create_depth(x,y,depth, obj_main_audio);
 global.main_graphics = instance_create_depth(x,y,depth, obj_main_graphics);
-
+global.main_camera = instance_create_depth(x,y,depth,obj_camera);
 
 // ------------------------------------
 // Global gameplay constants & variables.
@@ -95,6 +95,7 @@ global.player_spawn_direction = 270;
 global.player_spawn_index = obj_gbjam12_player;
 
 global.start_room = room;
+global.active_room = -1;
 
 global.font_01 = font_add_sprite_ext(spr_font_01_outline, "!" + chr(34) + "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~ _[]\\", 0,1);
 
