@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_gb12_en_statue",
-  "bboxMode":0,
-  "bbox_bottom":15,
+  "bboxMode":2,
+  "bbox_bottom":20,
   "bbox_left":0,
   "bbox_right":15,
-  "bbox_top":0,
+  "bbox_top":5,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -23,14 +23,14 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":16,
+  "height":21,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d606cfeb-ca53-4c89-82c4-2d906be927f5","blendMode":0,"displayName":"default","isLocked":false,"name":"d606cfeb-ca53-4c89-82c4-2d906be927f5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_gb12_en_statue",
   "nineSlice":null,
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"Enemies",
     "path":"folders/Sprites/gbjam12/Enemies.yy",
@@ -66,7 +66,7 @@
     },
     "name":"spr_gb12_en_statue",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":3.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -77,7 +77,7 @@
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"37e9831b-80dc-4614-ac85-f02bc49a3ef9","path":"sprites/spr_gb12_en_statue/spr_gb12_en_statue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9318d729-74b4-4edb-90b8-2f9ccc1b0588","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"4c829811-5f56-4390-a04d-0452f653b79c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"602182c2-0781-4d9b-bf70-d0dbc9cbdb61","path":"sprites/spr_gb12_en_statue/spr_gb12_en_statue.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8580dac8-9f11-4e70-b912-7de0008855cc","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
@@ -104,7 +104,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":5,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

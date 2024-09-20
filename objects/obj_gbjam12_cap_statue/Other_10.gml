@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+if (!is_on_ground) exit;
+
 // First, pick a tile.
 var _tile = r3_zero();
 var _direction = scr_snap_dir_to_compass(direction_aiming);
@@ -30,9 +32,9 @@ _temp = sqrt(_temp);
 
 velocity[0] = cos(degtorad(_xyangle)) * cos(degtorad(45));
 velocity[1] = -sin(degtorad(_xyangle)) * cos(degtorad(45));
-velocity[2] = sin(degtorad(45));
-var _scale = 15;
-if (_direction == 45 || _direction == 135 || _direction == 225 || _direction == 315) _scale = 13;
+velocity[2] = 1;
+var _scale = 10;
+if (_direction == 45 || _direction == 135 || _direction == 225 || _direction == 315) _scale = 9;
 r3_scale(velocity, _temp * _scale, velocity);
 
 play_sound(snd_gbjam12_statue_jump, 2, 0, 1,4,0.25);

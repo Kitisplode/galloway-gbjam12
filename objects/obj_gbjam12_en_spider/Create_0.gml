@@ -4,15 +4,18 @@
 // Inherit the parent event
 event_inherited();
 
-//cap_index = 
+cap_index = obj_gbjam12_cap_spider;
 
 up_vector = r3(0,-1,0);
 r3_clone(up_vector, normal_vector);
 force_gravity = 30;
 
-//collision_script = asset_get_index("scr_obj_gbjam12_en_spider_on_wall_collision");
+collision_script = -1;
 //no_collision_script = asset_get_index("scr_obj_gbjam12_en_spider_on_no_wall_collision");
 
 friction_ground = 1;
 
-spider_speed = 75;
+spider_speed = 35;
+shot_speed = 100;
+shot_time = 3;
+shot_timer = shot_time;

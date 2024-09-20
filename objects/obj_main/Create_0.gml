@@ -37,7 +37,7 @@ global.main_graphics = instance_create_depth(x,y,depth, obj_main_graphics);
 // ------------------------------------
 // Global gameplay constants & variables.
 global.GAMEPLAY_FRAMERATE = 60;
-global.GAMEPLAY_ENABLE_MANUAL_FRACTIONAL_MOVEMENT = false;
+//global.GAMEPLAY_ENABLE_MANUAL_FRACTIONAL_MOVEMENT = true;
 
 // Used to track transition states.
 enum TRANSITION_STATE
@@ -61,6 +61,7 @@ enum TRANSITION_PAUSE
 enum OBJECT_DEPTHS
 {
 	TRANSITION = -99999,
+	HUD = -700,
 	EFFECT = -600,
 	PLAYER = -500,
 	ENEMY = -100
@@ -86,10 +87,13 @@ global.difficulty = 0;
 global.gameplay_speed_scale = 1.0;
 
 global.player_hp_max = 4;
+global.player_hp = global.player_hp_max;
 global.player_spawn_x = NaN;
 global.player_spawn_y = NaN;
 global.player_spawn_z = NaN;
 global.player_spawn_direction = 270;
 global.player_spawn_index = obj_gbjam12_player;
+
+global.font_01 = font_add_sprite_ext(spr_font_01_outline, "!" + chr(34) + "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~ _[]\\", 0,1);
 
 randomize();

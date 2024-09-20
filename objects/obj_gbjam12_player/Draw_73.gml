@@ -1,7 +1,5 @@
 /// @description change sprite
 
-
-
 // Animate the current sprite.
 event_inherited();
 
@@ -25,7 +23,7 @@ else
 	// If we're not acting, use the normal walk sprites.
 	if (action == 0)
 	{
-		if (is_on_ground)
+		//if (is_on_ground)
 		{
 			anim_loop = true;
 			// Walking

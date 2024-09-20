@@ -6,8 +6,8 @@ event_inherited();
 
 direction_aiming = 270;
 direction_facing = 3;
-accel_run = 80;
-friction_ground = 0.7;
+accel_run = 90;
+friction_ground = 0.6;
 
 // Set up input
 direction_input = -1;
@@ -31,7 +31,7 @@ hurt_time = 0.15;
 holding_a = false;
 
 // Set up physics
-axis_max_speed = r3(100, 100, 1200);
+axis_max_speed = r3(60, 60, 1200);
 up_vector = r3(0,0,1);
 r3_clone(up_vector, normal_vector);
 force_gravity = 30;

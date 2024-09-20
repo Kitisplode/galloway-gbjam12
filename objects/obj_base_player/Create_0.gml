@@ -9,4 +9,6 @@ hp = hp_max;
 invuln_time = 1.5;
 invuln_timer = 0;
 
+invincible = false;
+
 depth = OBJECT_DEPTHS.PLAYER;

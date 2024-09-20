@@ -26,51 +26,34 @@ if (!paused)
 	}
 	
 	direction_input = id_input.direction_input;
-	if (direction_input > -1 && can_move)
+	if (normal_movement)
 	{
-		var _accel = accel_run;
-		direction_aiming = direction_input;
+		if (direction_input > -1 && can_move)
+		{
+			var _accel = accel_run;
+			direction_aiming = direction_input;
 		
-		scr_player_snap_to_4_directions(direction_aiming);
-		direction = direction_facing * 90;
+			scr_player_snap_to_4_directions(direction_aiming);
+			direction = direction_facing * 90;
 		
-		velocity[0] += cos(degtorad(direction_aiming)) * _accel;
-		velocity[1] += -sin(degtorad(direction_aiming)) * _accel;
-	}
+			velocity[0] += cos(degtorad(direction_aiming)) * _accel;
+			velocity[1] += -sin(degtorad(direction_aiming)) * _accel;
+		}
 	
-	if (is_on_ground)
-	{
-		var _temp_friction = friction_ground;
-		if (hurt_timer > 0) _temp_friction = 0.9;
-		velocity[0] *= _temp_friction;
-		velocity[1] *= _temp_friction;
+		if (is_on_ground)
+		{
+			var _temp_friction = friction_ground;
+			if (hurt_timer > 0) _temp_friction = 0.9;
+			velocity[0] *= _temp_friction;
+			velocity[1] *= _temp_friction;
+		}
 	}
 	
 	// If the player presses the depossess button, pop the player out the way they're facing,
 	// recreate the original enemy (temporarily stunned), and destroy this object.
 	if (can_act && scr_Input_Read(id_input, input_depossess, 0))
 	{
-		var _temp_id = instance_create_depth(x,y, depth, enemy_index);
-		_temp_id.z = z;
-		_temp_id.position[2] = position[2];
-		_temp_id.stunned = true;
-		
-		var _temp_x = x - sprite_get_xoffset(sprite_index) + sprite_width / 2;
-		var _temp_y = y - sprite_get_yoffset(sprite_index) + sprite_height / 2;
-		_temp_id = instance_create_depth(_temp_x,_temp_y, depth, obj_gbjam12_player);
-		_temp_id.z = z + 2;
-		_temp_id.position[2] = position[2] + 2;
-		_temp_id.direction_aiming = direction_aiming;
-		_temp_id.direction_facing = direction_facing;
-		_temp_id.velocity[0] = cos(degtorad(direction_facing * 90)) * 100;
-		_temp_id.velocity[1] = sin(degtorad(direction_facing * 90)) * -100;
-		_temp_id.velocity[2] = 250;
-		
-		scr_effect_create(_temp_x,_temp_y, spr_gb12_ef_pop, 0.25, OBJECT_DEPTHS.EFFECT);
-		play_sound(snd_gbjam12_player_uncap, 1, 0, 1, 1,0);
-		
-		instance_destroy();
-		
+		event_user(1);
 		exit;
 	}
 	

@@ -52,7 +52,12 @@ function scr_par_physics_Constrain_Velocity()
 
 function scr_par_physics_Apply_Fractional_Velocity()
 {
-	
+	for (var _i = 0; _i < 3; _i++)
+	{
+		velocity_fractional[_i] += velocity_working[_i] - scr_smart_floor(velocity_working[_i]);
+		velocity_working[_i] = scr_smart_floor(velocity_working[_i]) + scr_smart_floor(velocity_fractional[_i]);
+		velocity_fractional[_i] = velocity_fractional[_i] - scr_smart_floor(velocity_fractional[_i]);
+	}
 }
 
 // Called from the par_physics_2d step method to apply movement.
@@ -245,6 +250,13 @@ function _scr_par_physics_Move_Group(_movement_vector, _temp_group_of_physics_ob
 			ds_list_delete(_temp_group_of_physics_objects, i);
 		}
 	}
+}
+
+function scr_physics_collision_Stop_Moving(_axis)
+{
+	velocity_working[_axis] = 0;
+	velocity[_axis] = 0;
+	velocity_fractional[_axis] = 0;
 }
 
 // Call in a collision event for a physics object.

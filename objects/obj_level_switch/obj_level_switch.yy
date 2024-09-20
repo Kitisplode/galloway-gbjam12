@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Level",
-    "path":"folders/Objects/Game Objects/_Base/Level.yy",
+    "path":"folders/Objects/Game Objects/gbjam12/Level.yy",
   },
   "parentObjectId":{
     "name":"par_game_object",

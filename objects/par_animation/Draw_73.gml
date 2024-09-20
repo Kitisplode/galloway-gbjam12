@@ -1,5 +1,6 @@
 /// @description update animation
-if (!paused)
+var _paused = scr_Is_Paused(TRANSITION_PAUSE.ANIMATIONS);
+if (!_paused)
 {
 	// Animate the sprite.
     anim_looped = 0;
