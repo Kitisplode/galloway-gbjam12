@@ -3,6 +3,17 @@
 
 if (!instance_exists(par_transition))
 {
+	if (phase < 7)
+	{
+		if (scr_Input_Read(id_input, input_continue, 1)
+		|| scr_Input_Read(id_input, input_continue_2, 1)
+		|| scr_Input_Read(id_input, input_continue_3, 1))
+		{
+			phase = 8;
+			sound = 0;
+		}
+	}
+	
 	timer -= scr_get_tick_length();
 	if (phase == 0)
 	{
@@ -51,7 +62,7 @@ if (!instance_exists(par_transition))
 		if (timer <= 0)
 		{
 			phase = 4;
-			instance_create_depth(position[0],position[1], depth - 1, obj_gbjam12_ef_gameover_reaper);
+			instance_create_depth(80,72, depth - 1, obj_gbjam12_ef_gameover_reaper);
 		}
 	}
 	else if (phase == 4)
@@ -71,13 +82,55 @@ if (!instance_exists(par_transition))
 		{
 			if (obj_gbjam12_ef_gameover_reaper.fade_in)
 			{
+				visible = false;
 				var _temp_id = scr_create_text_string_ext(80, 100, OBJECT_DEPTHS.TRANSITION - 3,
 															"GAME OVER", scr_get_tick_length() * 3,
 															global.font_01, fa_center, fa_middle,
 															1, c_white, -1);
-				instance_destroy();
+				phase = 6;
+				timer = wait_time_4;
 			}
 		}
+	}
+	else if (phase == 6)
+	{
+		if (timer <= 0)
+		{
+			var _temp_id = scr_create_text_string_ext(80, 120, OBJECT_DEPTHS.TRANSITION - 3,
+														"PRESS START", scr_get_tick_length() * 3,
+														global.font_01, fa_center, fa_middle,
+														1, c_white, -1);
+			phase = 7;
+		}
+	}
+	else if (phase == 7)
+	{
+		if (scr_Input_Read(id_input, input_continue, 1)
+		|| scr_Input_Read(id_input, input_continue_2, 1)
+		|| scr_Input_Read(id_input, input_continue_3, 1))
+		{
+			scr_reset_game();
+			instance_destroy();
+			exit;
+		}
+	}
+	else if (phase == 8)
+	{
+		if (!instance_exists(obj_gbjam12_ef_gameover_reaper))
+		{
+			var _temp_id = instance_create_depth(80,72, depth - 1, obj_gbjam12_ef_gameover_reaper);
+			_temp_id.fade_in = true;
+		}
+		scr_create_text_string_ext(80, 100, OBJECT_DEPTHS.TRANSITION - 3,
+									"GAME OVER", -1,
+									global.font_01, fa_center, fa_middle,
+									1, c_white, -1);
+		scr_create_text_string_ext(80, 120, OBJECT_DEPTHS.TRANSITION - 3,
+									"PRESS START", -1,
+									global.font_01, fa_center, fa_middle,
+									1, c_white, -1);
+		visible = false;
+		phase = 7;
 	}
 }
 

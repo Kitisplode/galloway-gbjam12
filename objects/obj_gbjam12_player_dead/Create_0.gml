@@ -10,7 +10,8 @@ phase = 0;
 timer = 0;
 wait_time_1 = 1;
 wait_time_2 = 1;
-wait_time_3 = 2;
+wait_time_3 = 3;
+wait_time_4 = 3;
 
 sound_index = snd_gbjam12_player_hurt_02;
 sounds_total = 5;
@@ -18,3 +19,15 @@ sound = sounds_total;
 sound_time = 0.2;
 sound_timer = 0;
 sound_pitch = 1;
+
+id_input = instance_create_depth(0,0, depth - 1, obj_input);
+input_continue = "start";
+input_continue_2 = "a";
+input_continue_3 = "b";
+with(id_input)
+{
+	scr_Input_Add_Verb("start");
+	scr_Input_Add_Verb("a");
+	scr_Input_Add_Verb("b");
+}
+id_input.persistent = true;

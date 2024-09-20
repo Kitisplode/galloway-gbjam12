@@ -1,23 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gbjam12_player_dead",
+  "%Name":"obj_gbjam12_ef_enemy_fall",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gbjam12_player_dead",
+  "name":"obj_gbjam12_ef_enemy_fall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Game Objects/gbjam12/Player.yy",
+    "name":"Effects",
+    "path":"folders/Objects/Game Objects/gbjam12/Effects.yy",
   },
   "parentObjectId":{
-    "name":"par_game_object",
-    "path":"objects/par_game_object/par_game_object.yy",
+    "name":"par_animation",
+    "path":"objects/par_animation/par_animation.yy",
   },
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -34,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_gb12_player_dead",
-    "path":"sprites/spr_gb12_player_dead/spr_gb12_player_dead.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
