@@ -38,6 +38,9 @@
     "name":"spr_gb12_en_candle",
     "path":"sprites/spr_gb12_en_candle/spr_gb12_en_candle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"msk_gb12_player",
+    "path":"sprites/msk_gb12_player/msk_gb12_player.yy",
+  },
   "visible":true,
 }

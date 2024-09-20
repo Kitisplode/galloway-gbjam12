@@ -8,10 +8,13 @@ if (!fade_in)
 	if (image_alpha > 1.2)
 	{
 		fade_in = true;
-		image_alpha = 1;
-		bob_amount = 0.12;
-		alpha_cycle_speed = 5;
 	}
+}
+else
+{
+	image_alpha = 1;
+	bob_amount = 0.12;
+	alpha_cycle_speed = 5;
 }
 
 y += cos(degtorad(alpha_cycle)) * bob_amount;

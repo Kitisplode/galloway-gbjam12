@@ -66,3 +66,16 @@ if (!paused)
 
 // Inherit the parent event
 event_inherited();
+
+if (!paused)
+{
+	if ((position[2] < -1 || z < -1) && !instance_exists(par_transition))
+	{
+		global.player_hp--;
+		play_sound(snd_gbjam12_player_fall, 1, 0, 0.5, 0.5,0);
+		var _temp_id = instance_create_depth(x,y, depth, obj_gbjam12_ef_enemy_fall);
+		_temp_id.sprite_index = sprite_index;
+		scr_transition_fade_to_color(room, 0.5, c_black, TRANSITION_PAUSE.GAME);
+		visible = false;
+	}
+}
