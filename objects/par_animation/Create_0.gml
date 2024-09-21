@@ -5,7 +5,7 @@ id_base = -1;
 
 // The actual position, since we're using gmlinear vectors.
 position = r3(x,y,0);
-position_previous = r3_clone(position);
+position_previous = r3(x,y,0);
 z = 0;
 
 // if this is active, draws on the gui instead of the world

@@ -1,22 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"par_physics",
+  "%Name":"obj_block_switch_vanish_reverse",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"par_physics",
+  "name":"obj_block_switch_vanish_reverse",
   "overriddenProperties":[],
   "parent":{
-    "name":"_Base",
-    "path":"folders/Objects/Game Objects/_Base.yy",
+    "name":"Blocks",
+    "path":"folders/Objects/Game Objects/_Base/Blocks.yy",
   },
   "parentObjectId":{
-    "name":"par_game_object",
-    "path":"objects/par_game_object/par_game_object.yy",
+    "name":"obj_block",
+    "path":"objects/obj_block/obj_block.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_block_switch_vanish",
+    "path":"sprites/spr_block_switch_vanish/spr_block_switch_vanish.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

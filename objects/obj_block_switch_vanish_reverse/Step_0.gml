@@ -10,8 +10,8 @@ if (!is_undefined(_value))
 	if (_value) state = 1;
 	else state = 0;
 }
-	
-if (state == 1)
+
+if (state == 0)
 {
 	visible = false;
 	mask_index = msk_no_collision;
