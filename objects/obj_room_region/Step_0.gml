@@ -1,4 +1,4 @@
-if (place_meeting(x, y, obj_gbjam12_player))
+if (place_meeting(x, y, obj_base_player))
 {
 	global.active_room = id;
 }

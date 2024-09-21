@@ -10,7 +10,7 @@ if (instance_number(obj_main_audio) > 1)
 }
 
 global.volume_main = 1;
-global.volume_music = 1;
+global.volume_music = 1.25;
 global.volume_sounds = 1;
 
 music_looped_times = 0;

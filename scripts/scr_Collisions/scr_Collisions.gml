@@ -104,6 +104,7 @@ function scr_Check_For_Solids(_position_to_check, _flag_skip_if_already_collidin
 			var _temp_id = ds_list_find_value(_temp_block_list, i);
 			if (!instance_exists(_temp_id)) continue;
 			if (id == _temp_id) continue;
+			if (object_is_ancestor(object_index, obj_base_player) && _temp_id.object_index == obj_block_enemy_only) continue;
 			if (place_meeting(_position_to_check[0], _position_to_check[1], _temp_id))
 			{
 				// Skip the collision if we're already colliding with the other object and we want to skip.

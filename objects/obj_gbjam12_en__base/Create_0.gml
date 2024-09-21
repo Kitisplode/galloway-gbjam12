@@ -18,6 +18,7 @@ slide_around_blocks_distance = 2;
 
 ds_list_add(global.list_pushables, id);
 
+z_height = 24;
 draw_2d_z = true;
 
 damage_time = 0.25;
