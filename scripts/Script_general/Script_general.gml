@@ -200,3 +200,10 @@ function scr_reset_game()
 	global.player_spawn_direction = 270;
 	global.player_spawn_index = obj_gbjam12_player;
 }
+
+function scr_continue_game()
+{
+	scr_transition_fade_to_color(global.start_room, 1, c_white);
+	global.player_hp = global.player_hp_max;
+	global.player_spawn_index = obj_gbjam12_player;
+}

@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"spr",
+  "%Name":"spr_gb12_scene_title",
   "bboxMode":0,
-  "bbox_bottom":0,
+  "bbox_bottom":143,
   "bbox_left":0,
-  "bbox_right":0,
+  "bbox_right":159,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,24 +16,24 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":144,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"725f8c79-f4c5-4106-9278-37d6eee92d87","blendMode":0,"displayName":"default","isLocked":false,"name":"725f8c79-f4c5-4106-9278-37d6eee92d87","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr",
+  "name":"spr_gb12_scene_title",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"gbjam12",
-    "path":"folders/Sprites/gbjam12.yy",
+    "name":"Scenes",
+    "path":"folders/Sprites/gbjam12/Scenes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr",
+    "%Name":"spr_gb12_scene_title",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr",
+    "name":"spr_gb12_scene_title",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b86c7e2a-766c-4d5d-bb81-4247edb795c0","path":"sprites/spr/spr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b86c7e2a-766c-4d5d-bb81-4247edb795c0","path":"sprites/spr_gb12_scene_title/spr_gb12_scene_title.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"79df22ed-df24-4ca1-863d-e46b682cad94","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":160,
 }

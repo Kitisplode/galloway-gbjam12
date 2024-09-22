@@ -84,7 +84,7 @@ if (!instance_exists(par_transition))
 		{
 			if (obj_gbjam12_ef_gameover_reaper.fade_in)
 			{
-				play_music(mus_gbjam12_game_over, 1, 0, 1, 1,0);
+				play_sound(mus_gbjam12_game_over, 1, 0, 1, 1,0);
 				visible = false;
 				var _temp_id = scr_create_text_string_ext(160, 175, OBJECT_DEPTHS.TRANSITION - 3,
 															"GAME OVER", scr_get_tick_as_percent(0.2),
@@ -112,7 +112,8 @@ if (!instance_exists(par_transition))
 		|| scr_Input_Read(id_input, input_continue_2, 1)
 		|| scr_Input_Read(id_input, input_continue_3, 1))
 		{
-			scr_reset_game();
+			//scr_reset_game();
+			scr_continue_game();
 			instance_destroy();
 			exit;
 		}
@@ -128,7 +129,7 @@ if (!instance_exists(par_transition))
 									"GAME OVER", -1,
 									global.font_01, fa_center, fa_middle,
 									1, c_white, -1);
-		scr_create_text_string_ext(80, 195, OBJECT_DEPTHS.TRANSITION - 3,
+		scr_create_text_string_ext(160, 195, OBJECT_DEPTHS.TRANSITION - 3,
 									"PRESS START", -1,
 									global.font_01, fa_center, fa_middle,
 									1, c_white, -1);
