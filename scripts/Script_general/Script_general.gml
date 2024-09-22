@@ -90,8 +90,18 @@ function scr_check_off_screen_self(_boundary)
 
 function scr_check_off_screen(_instance, _boundary)
 {
-	return (_instance.bbox_left > room_width - _boundary || _instance.bbox_right < _boundary ||
-			_instance.bbox_top > room_height - _boundary || _instance.bbox_bottom < _boundary);	
+	return (_instance.bbox_right  < _boundary ||
+			_instance.bbox_bottom < _boundary ||
+			_instance.bbox_left   > room_width  - _boundary ||
+	        _instance.bbox_top    > room_height - _boundary);	
+}
+
+function scr_check_partly_off_screen(_instance, _boundary)
+{
+	return (_instance.bbox_left   < _boundary ||
+			_instance.bbox_top    < _boundary ||
+			_instance.bbox_right  > room_width  - _boundary ||
+	        _instance.bbox_bottom > room_height - _boundary);	
 }
 
 function scr_execute_script(_script_name)
