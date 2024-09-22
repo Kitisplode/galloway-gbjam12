@@ -3,6 +3,8 @@
 
 if (!instance_exists(par_transition))
 {
+	
+	
 	if (phase < 7)
 	{
 		if (scr_Input_Read(id_input, input_continue, 1)

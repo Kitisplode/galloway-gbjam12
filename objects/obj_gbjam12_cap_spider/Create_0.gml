@@ -19,3 +19,5 @@ spider_speed = 35;
 shot_speed = 100;
 
 normal_movement = false;
+
+hurt_pushback = 0;

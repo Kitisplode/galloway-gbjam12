@@ -4,6 +4,17 @@
 
 if (!paused)
 {
+	if (global.player_hp <= 0 && !instance_exists(par_transition))
+	{
+		var _temp_id = instance_create_depth(x,y, depth, obj_gbjam12_player_dead);
+		//_temp_id.sprite_index = sprite_index;
+		_temp_id.image_xscale = image_xscale;
+		//_temp_id.image_angle = image_angle;
+		scr_transition_fade_to_color(rm_gbjam_gameover, 1);
+		instance_destroy();
+		exit;
+	}
+	
 	// While hurt, the player cannot move.
 	if (hurt_timer > 0)
 	{

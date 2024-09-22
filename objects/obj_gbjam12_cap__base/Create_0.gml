@@ -28,6 +28,7 @@ can_act = true;
 action = 0;
 hurt_timer = 0;
 hurt_time = 0.15;
+hurt_pushback = 200;
 
 // Set up physics
 axis_max_speed = r3(100, 100, 1200);

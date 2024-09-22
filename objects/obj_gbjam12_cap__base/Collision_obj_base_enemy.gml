@@ -10,8 +10,8 @@ event_inherited();
 if (invuln_timer > 0 && _temp_invuln_timer <= 0)
 {
 	var _temp_direction = point_direction(other.x,other.y, x,y);
-	velocity[0] = cos(degtorad(_temp_direction)) * 200;
-	velocity[1] = -sin(degtorad(_temp_direction)) * 200;
+	velocity[0] = cos(degtorad(_temp_direction)) * hurt_pushback;
+	velocity[1] = -sin(degtorad(_temp_direction)) * hurt_pushback;
 	hurt_timer = hurt_time;
 	
 	var _temp_x = other.x - sprite_get_xoffset(other.sprite_index) + other.sprite_width / 2;
