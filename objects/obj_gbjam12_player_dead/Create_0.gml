@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
+scr_audio_play_song_fade(-1, 1);
 depth = OBJECT_DEPTHS.TRANSITION - 1;
 
 phase = 0;
@@ -11,7 +12,7 @@ timer = 0;
 wait_time_1 = 1;
 wait_time_2 = 1;
 wait_time_3 = 3;
-wait_time_4 = 3;
+wait_time_4 = 5;
 
 sound_index = snd_gbjam12_player_hurt_02;
 sounds_total = 5;
@@ -31,3 +32,8 @@ with(id_input)
 	scr_Input_Add_Verb("b");
 }
 id_input.persistent = true;
+
+position[0] -= camera_get_view_x(view_get_camera(0));
+position[1] -= camera_get_view_y(view_get_camera(0));
+x = position[0];
+y = position[1];

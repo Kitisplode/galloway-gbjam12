@@ -39,3 +39,6 @@ stunned_time = 5;
 can_possess = true;
 
 ai_notices_player = false;
+normal_movement = true;
+
+active_room = id;

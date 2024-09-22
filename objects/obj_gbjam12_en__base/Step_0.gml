@@ -19,15 +19,18 @@ if (!paused)
 		}
 	}
 	
-	if (hurt_timer > 0)
+	if (normal_movement)
 	{
-		hurt_timer -= scr_get_tick_length();
-		if (hurt_timer <= 0) r3_zero_out(velocity);
-	}
-	else
-	{
-		velocity[0] *= friction_ground;
-		velocity[1] *= friction_ground;
+		if (hurt_timer > 0)
+		{
+			hurt_timer -= scr_get_tick_length();
+			if (hurt_timer <= 0) r3_zero_out(velocity);
+		}
+		else
+		{
+			velocity[0] *= friction_ground;
+			velocity[1] *= friction_ground;
+		}
 	}
 }
 

@@ -29,4 +29,4 @@ global.player_sound_priority = 10;
 list_music_intros = ds_list_create();
 list_music_loops = ds_list_create();
 
-//scr_audio_add_song(mus_neomagiko_title_intro, mus_neomagiko_title_loop);
+scr_audio_add_song(mus_gbjam12_escape_intro, mus_gbjam12_escape_loop);
