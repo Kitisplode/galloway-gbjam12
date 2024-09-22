@@ -1498,7 +1498,9 @@ function __input_class_player() constructor
             var _v = 0;
             repeat(array_length(__global.__all_verb_array))
             {
-                __verb_state_dict[$ __global.__all_verb_array[_v]].__clear();
+				state = __verb_state_dict[$ __global.__all_verb_array[_v]];
+				if (state != noone)
+					state.__clear();
                 ++_v;
             }
             
@@ -1524,7 +1526,9 @@ function __input_class_player() constructor
         var _v = 0;
         repeat(array_length(__global.__basic_verb_array))
         {
-            __verb_state_dict[$ __global.__basic_verb_array[_v]].tick(__verb_group_state_dict, __active);
+			state = __verb_state_dict[$ __global.__basic_verb_array[_v]];
+			if (state != noone)
+				state.tick(__verb_group_state_dict, __active);
             ++_v;
         }
     }
