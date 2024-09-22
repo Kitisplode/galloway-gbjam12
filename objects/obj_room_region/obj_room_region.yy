@@ -8,8 +8,8 @@
   "name":"obj_room_region",
   "overriddenProperties":[],
   "parent":{
-    "name":"Admin",
-    "path":"folders/Objects/Admin.yy",
+    "name":"Level",
+    "path":"folders/Objects/Game Objects/_Base/Level.yy",
   },
   "parentObjectId":null,
   "persistent":false,

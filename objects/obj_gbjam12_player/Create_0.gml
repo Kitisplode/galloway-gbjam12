@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+direction = 270;
+
 direction_aiming = 270;
 direction_facing = 3;
 accel_run = 90;

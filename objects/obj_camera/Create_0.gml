@@ -12,4 +12,4 @@ shake_length = 0;
 shake_magnitude = 0;
 shake_remain = 0;
 
-follow = obj_gbjam12_player;
+follow = obj_base_player;

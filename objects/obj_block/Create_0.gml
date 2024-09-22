@@ -1,6 +1,6 @@
 event_inherited();
 
-z = depth;
+z = 0;
 z_height = 15;
 
 solid = true;

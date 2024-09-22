@@ -10,7 +10,7 @@ if (instance_number(obj_main_audio) > 1)
 }
 
 global.volume_main = 1;
-global.volume_music = 1;
+global.volume_music = 1.25;
 global.volume_sounds = 1;
 
 music_looped_times = 0;
@@ -29,4 +29,4 @@ global.player_sound_priority = 10;
 list_music_intros = ds_list_create();
 list_music_loops = ds_list_create();
 
-//scr_audio_add_song(mus_neomagiko_title_intro, mus_neomagiko_title_loop);
+scr_audio_add_song(mus_gbjam12_escape_intro, mus_gbjam12_escape_loop);
