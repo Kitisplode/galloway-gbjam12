@@ -10,8 +10,9 @@ if (!paused)
 	button_pushed = false;
 	for (var _i = 0; _i < ds_list_size(global.list_pushables); _i++)
 	{
-		var _temp_id = ds_list_find_value(global.list_pushables, _i);
 		var _colliding = false;
+		var _temp_id = ds_list_find_value(global.list_pushables, _i);
+		if (!instance_exists(_temp_id)) continue;
 		if (!place_meeting(x,y, _temp_id)) continue;
 		with (_temp_id)
 		{
