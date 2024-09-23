@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"galloway_gbjam12",
+  "%Name":"Mask of the Reaper",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -120,9 +120,9 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.800.0.618",
   },
-  "name":"galloway_gbjam12",
+  "name":"Mask of the Reaper",
   "resources":[
     {"id":{"name":"input_controller_object","path":"objects/input_controller_object/input_controller_object.yy",},},
     {"id":{"name":"obj_base_enemy_shot","path":"objects/obj_base_enemy_shot/obj_base_enemy_shot.yy",},},
