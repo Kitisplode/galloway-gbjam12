@@ -46,10 +46,12 @@ if (!paused)
 						velocity[1] = _sign * spider_speed;
 					}
 				}
+				anim_speed = 0.1;
 			}
 			else
 			{
 				r3_zero_out(velocity);
+				anim_speed = 0;
 			}
 		}
 	

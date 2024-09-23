@@ -42,3 +42,4 @@ ai_notices_player = false;
 normal_movement = true;
 
 active_room = id;
+obeys_room = true;

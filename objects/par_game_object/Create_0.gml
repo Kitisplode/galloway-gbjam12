@@ -25,5 +25,10 @@ sparkle_time = 0.5;
 sparkle_anim_speed = 0.5;
 sparkle_sound = -1;
 
+after_effect_active = false;
+after_effect_sprite = -1;
+after_effect_timer = 0;
+after_effect_time = 0.25;
+
 fade_time = -1;
 fade_point = 0.5;

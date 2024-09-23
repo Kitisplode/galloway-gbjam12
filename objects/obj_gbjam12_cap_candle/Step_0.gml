@@ -3,3 +3,12 @@
 
 // Inherit the parent event
 event_inherited();
+
+if (action == 0)
+{
+	scr_darkness_add_light(id, 24);
+}
+else
+{
+	scr_darkness_add_light(id, 64);
+}
