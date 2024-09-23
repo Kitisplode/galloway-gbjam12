@@ -62,6 +62,7 @@
     {"name":"spr_gb12_en_minireaper_masked_changing","order":3,"path":"sprites/spr_gb12_en_minireaper_masked_changing/spr_gb12_en_minireaper_masked_changing.yy",},
     {"name":"spr_gb12_en_minireaper_masked","order":2,"path":"sprites/spr_gb12_en_minireaper_masked/spr_gb12_en_minireaper_masked.yy",},
     {"name":"spr_gb12_en_minireaper","order":1,"path":"sprites/spr_gb12_en_minireaper/spr_gb12_en_minireaper.yy",},
+    {"name":"spr_gb12_hud_base","order":2,"path":"sprites/spr_gb12_hud_base/spr_gb12_hud_base.yy",},
     {"name":"spr_gb12_hud_heart_02","order":1,"path":"sprites/spr_gb12_hud_heart_02/spr_gb12_hud_heart_02.yy",},
     {"name":"spr_gb12_level_drawbridge","order":3,"path":"sprites/spr_gb12_level_drawbridge/spr_gb12_level_drawbridge.yy",},
     {"name":"spr_gb12_level_front_door","order":2,"path":"sprites/spr_gb12_level_front_door/spr_gb12_level_front_door.yy",},

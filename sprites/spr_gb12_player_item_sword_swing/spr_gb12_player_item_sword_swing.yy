@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_gb12_player_item_sword_swing",
   "bboxMode":0,
-  "bbox_bottom":30,
+  "bbox_bottom":39,
   "bbox_left":0,
-  "bbox_right":15,
+  "bbox_right":19,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,13 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
+    {"$GMSpriteFrame":"","%Name":"f6e88a47-7dba-4294-a2f8-ecb629660cac","name":"f6e88a47-7dba-4294-a2f8-ecb629660cac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"b90b10fa-9a48-4ed4-b2a6-ee19bdf321fe","name":"b90b10fa-9a48-4ed4-b2a6-ee19bdf321fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"8ac25efc-4f78-43a4-9557-48d084d31244","name":"8ac25efc-4f78-43a4-9557-48d084d31244","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"85c87514-e1ea-4507-80a5-87214e628751","name":"85c87514-e1ea-4507-80a5-87214e628751","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4f01f7c8-3147-4dfd-8361-e5bc957331e8","name":"4f01f7c8-3147-4dfd-8361-e5bc957331e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":32,
+  "height":40,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"5adea232-ad00-4acb-ac31-eeaa3699f6bd","blendMode":0,"displayName":"default","isLocked":false,"name":"5adea232-ad00-4acb-ac31-eeaa3699f6bd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -51,7 +53,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":5.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -71,20 +73,26 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f6e88a47-7dba-4294-a2f8-ecb629660cac","path":"sprites/spr_gb12_player_item_sword_swing/spr_gb12_player_item_sword_swing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"825f8690-c84c-4946-87d9-e8dbb95f7784","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b90b10fa-9a48-4ed4-b2a6-ee19bdf321fe","path":"sprites/spr_gb12_player_item_sword_swing/spr_gb12_player_item_sword_swing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1ebcca4c-213c-437f-b11e-e150db2b3b83","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"1ebcca4c-213c-437f-b11e-e150db2b3b83","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ac25efc-4f78-43a4-9557-48d084d31244","path":"sprites/spr_gb12_player_item_sword_swing/spr_gb12_player_item_sword_swing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6c6905de-c678-459c-974d-e6cbcdd35cf8","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"6c6905de-c678-459c-974d-e6cbcdd35cf8","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"85c87514-e1ea-4507-80a5-87214e628751","path":"sprites/spr_gb12_player_item_sword_swing/spr_gb12_player_item_sword_swing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"aa0e9d99-c8ac-4211-ae2d-3c18f1b8cb80","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"aa0e9d99-c8ac-4211-ae2d-3c18f1b8cb80","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4f01f7c8-3147-4dfd-8361-e5bc957331e8","path":"sprites/spr_gb12_player_item_sword_swing/spr_gb12_player_item_sword_swing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e6334428-868a-4bd2-8efb-3fce948405b8","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":-6,
-    "yorigin":16,
+    "xorigin":0,
+    "yorigin":20,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -94,5 +102,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":16,
+  "width":20,
 }

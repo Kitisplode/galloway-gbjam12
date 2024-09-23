@@ -46,4 +46,4 @@ ds_list_add(global.list_pushables, id);
 
 draw_2d_z = true;
 
-shader_outline = true;
+has_mask = true;

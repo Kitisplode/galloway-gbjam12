@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-anim_speed = dom_id.anim_speed*2;
+anim_speed = dom_id.anim_speed*2.5;
+if (dom_id.direction_facing == 2) anim_speed *= -1;
 sprite_index = spr_gb12_player_item_sword_swing;
 
 var _temp_y = dom_id.position[1] - dom_id.position[2];

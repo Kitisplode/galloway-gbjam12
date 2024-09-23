@@ -594,6 +594,7 @@
     {"id":{"name":"spr_gb12_en_spider_web","path":"sprites/spr_gb12_en_spider_web/spr_gb12_en_spider_web.yy",},},
     {"id":{"name":"spr_gb12_en_spider","path":"sprites/spr_gb12_en_spider/spr_gb12_en_spider.yy",},},
     {"id":{"name":"spr_gb12_en_statue","path":"sprites/spr_gb12_en_statue/spr_gb12_en_statue.yy",},},
+    {"id":{"name":"spr_gb12_hud_base","path":"sprites/spr_gb12_hud_base/spr_gb12_hud_base.yy",},},
     {"id":{"name":"spr_gb12_hud_heart_02","path":"sprites/spr_gb12_hud_heart_02/spr_gb12_hud_heart_02.yy",},},
     {"id":{"name":"spr_gb12_hud_heart","path":"sprites/spr_gb12_hud_heart/spr_gb12_hud_heart.yy",},},
     {"id":{"name":"spr_gb12_level_button","path":"sprites/spr_gb12_level_button/spr_gb12_level_button.yy",},},

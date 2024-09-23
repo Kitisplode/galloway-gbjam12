@@ -86,7 +86,7 @@ global.paused = false;
 global.difficulty = 0;
 global.gameplay_speed_scale = 1.0;
 
-global.player_hp_max = 4;
+global.player_hp_max = 16;
 global.player_hp = global.player_hp_max;
 global.player_spawn_x = NaN;
 global.player_spawn_y = NaN;

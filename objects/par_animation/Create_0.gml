@@ -41,10 +41,3 @@ pump = r3_zero();
 paused = false;
 // If this is false, this animation will not be affected by pausing.
 affected_by_pause = true;
-
-shader_outline = false;
-//outline_pixel_stage = shader_get_uniform(sh_outline,"texture_Pixel")
-//outline_thickness_stage = shader_get_uniform(sh_outline,"thickness_power")
-//outline_color_stage = shader_get_uniform(sh_outline,"RGBA")
-outline_thickness = 1;
-outline_color = c_white;
