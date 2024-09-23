@@ -16,5 +16,6 @@ movement_collision = false;
 apply_gravity_force = false;
 obeys_room = false;
 
+after_effect_active = true;
 after_effect_sprite = spr_gb12_en_reaper_silhouette;
 after_effect_time = 0.25;

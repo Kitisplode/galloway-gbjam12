@@ -10,5 +10,5 @@ if (action == 0)
 }
 else
 {
-	scr_darkness_add_light(id, 32);
+	scr_darkness_add_light(id, 64);
 }

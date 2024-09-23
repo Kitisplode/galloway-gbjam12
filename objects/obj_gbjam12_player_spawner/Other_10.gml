@@ -23,5 +23,6 @@ _temp_id.direction_aiming = global.player_spawn_direction;
 // If the player doesn't have the mask any more, spawn the reaper behind them!
 if (!global.player_has_mask)
 {
-	var _temp_index = instance_create_depth(_temp_x, _temp_y - 80, OBJECT_DEPTHS.ENEMY, obj_gbjam12_en_reaper);
+	var _dir = degtorad((global.player_spawn_direction + 180) mod 360);
+	var _temp_index = instance_create_depth(_temp_x + cos(_dir) * 80, _temp_y - sin(_dir) * 80, OBJECT_DEPTHS.ENEMY, obj_gbjam12_en_reaper);
 }
