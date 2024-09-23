@@ -73,6 +73,7 @@
     {"$GMFolder":"","%Name":"Level","folderPath":"folders/Objects/Game Objects/gbjam12/Level.yy","name":"Level","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Game Objects/gbjam12/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Caps","folderPath":"folders/Objects/Game Objects/gbjam12/Player/Caps.yy","name":"Caps","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Room Managers","folderPath":"folders/Objects/Room Managers.yy","name":"Room Managers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -118,7 +119,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.800.0.618",
   },
   "name":"galloway_gbjam12",
   "resources":[
@@ -132,6 +133,7 @@
     {"id":{"name":"obj_block_switch_vanish","path":"objects/obj_block_switch_vanish/obj_block_switch_vanish.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_cutscene_music","path":"objects/obj_cutscene_music/obj_cutscene_music.yy",},},
     {"id":{"name":"obj_effect_fade","path":"objects/obj_effect_fade/obj_effect_fade.yy",},},
     {"id":{"name":"obj_effect","path":"objects/obj_effect/obj_effect.yy",},},
     {"id":{"name":"obj_gbjam12_cap__base","path":"objects/obj_gbjam12_cap__base/obj_gbjam12_cap__base.yy",},},
@@ -173,6 +175,7 @@
     {"id":{"name":"obj_room_music","path":"objects/obj_room_music/obj_room_music.yy",},},
     {"id":{"name":"obj_room_region","path":"objects/obj_room_region/obj_room_region.yy",},},
     {"id":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},},
+    {"id":{"name":"obj_scene_controller","path":"objects/obj_scene_controller/obj_scene_controller.yy",},},
     {"id":{"name":"obj_shot_player","path":"objects/obj_shot_player/obj_shot_player.yy",},},
     {"id":{"name":"obj_text_paragraph","path":"objects/obj_text_paragraph/obj_text_paragraph.yy",},},
     {"id":{"name":"obj_text_string","path":"objects/obj_text_string/obj_text_string.yy",},},
@@ -637,6 +640,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_gbjam_splash_gbjam","path":"rooms/rm_gbjam_splash_gbjam/rm_gbjam_splash_gbjam.yy",},},
+    {"roomId":{"name":"rm_gbjam_splash_galloway","path":"rooms/rm_gbjam_splash_galloway/rm_gbjam_splash_galloway.yy",},},
+    {"roomId":{"name":"rm_gbjam_splash_title","path":"rooms/rm_gbjam_splash_title/rm_gbjam_splash_title.yy",},},
     {"roomId":{"name":"rm_gbjam_courtyard","path":"rooms/rm_gbjam_courtyard/rm_gbjam_courtyard.yy",},},
     {"roomId":{"name":"rm_gbjam_tower_01","path":"rooms/rm_gbjam_tower_01/rm_gbjam_tower_01.yy",},},
     {"roomId":{"name":"rm_gbjam_boss","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},},
@@ -644,9 +650,6 @@
     {"roomId":{"name":"rm_gbjam_02","path":"rooms/rm_gbjam_02/rm_gbjam_02.yy",},},
     {"roomId":{"name":"rm_gbjam_03","path":"rooms/rm_gbjam_03/rm_gbjam_03.yy",},},
     {"roomId":{"name":"rm_gbjam_gameover","path":"rooms/rm_gbjam_gameover/rm_gbjam_gameover.yy",},},
-    {"roomId":{"name":"rm_gbjam_splash_galloway","path":"rooms/rm_gbjam_splash_galloway/rm_gbjam_splash_galloway.yy",},},
-    {"roomId":{"name":"rm_gbjam_splash_gbjam","path":"rooms/rm_gbjam_splash_gbjam/rm_gbjam_splash_gbjam.yy",},},
-    {"roomId":{"name":"rm_gbjam_splash_title","path":"rooms/rm_gbjam_splash_title/rm_gbjam_splash_title.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
