@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_gb12_level_tileset",
   "bboxMode":0,
-  "bbox_bottom":339,
+  "bbox_bottom":351,
   "bbox_left":0,
   "bbox_right":255,
   "bbox_top":0,
