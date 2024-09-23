@@ -13,3 +13,4 @@ shake_length = 0;
 shake_magnitude = 0;
 
 follow = obj_base_player;
+
