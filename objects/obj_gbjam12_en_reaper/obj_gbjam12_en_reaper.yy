@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gb12_en_reaper_silhouette",
-    "path":"sprites/spr_gb12_en_reaper_silhouette/spr_gb12_en_reaper_silhouette.yy",
+    "name":"spr_gb12_en_reaper",
+    "path":"sprites/spr_gb12_en_reaper/spr_gb12_en_reaper.yy",
   },
   "spriteMaskId":{
     "name":"msk_gb12_player",

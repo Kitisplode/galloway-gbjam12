@@ -212,6 +212,7 @@ function scr_reset_game()
 	global.player_spawn_z = NaN;
 	global.player_spawn_direction = 270;
 	global.player_spawn_index = obj_gbjam12_player;
+	global.player_has_mask = true;
 	ds_map_clear(global.map_switches);
 }
 
