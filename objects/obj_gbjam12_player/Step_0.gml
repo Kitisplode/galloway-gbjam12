@@ -49,7 +49,7 @@ if (!paused)
 	}
 	
 	direction_input = id_input.direction_input;
-	if (direction_input > -1 && can_move)
+	if (direction_input > -1 && can_move && is_on_ground)
 	{
 		var _accel = accel_run;
 		direction_aiming = direction_input;

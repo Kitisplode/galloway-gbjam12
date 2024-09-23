@@ -36,6 +36,19 @@ if (!paused)
 			}
 		}
 	}
+	if (after_effect_active)
+	{
+		after_effect_timer -= scr_get_tick_length();
+		if (after_effect_timer <= 0)
+		{
+			after_effect_timer = after_effect_time;
+			var _sprite = after_effect_sprite;
+			if (after_effect_sprite == -1) _sprite = sprite_index;
+			var _temp_id = scr_effect_create(x,y, _sprite, 0, depth + 5);
+			_temp_id.anim_frame = anim_frame;
+		}
+	}
+	
 	if (fade_time > -1)
 	{
 		image_alpha -= scr_get_tick_as_percent(fade_time);

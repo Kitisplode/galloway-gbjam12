@@ -24,4 +24,4 @@ ai_phase = 0;
 ai_roll_timer = 0;
 ai_roll_time = 2;
 ai_roll_distance = 40;
-ai_roll_distance_short = 25;
+ai_roll_distance_short = 32;

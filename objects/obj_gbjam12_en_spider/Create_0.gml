@@ -19,3 +19,5 @@ spider_speed = 35;
 shot_speed = 100;
 shot_time = 3;
 shot_timer = shot_time;
+
+anim_speed = 0.1;

@@ -58,10 +58,10 @@ else
 	{
 		anim_loop = true;
 		anim_speed = 0;
-		if (direction_facing == 0) scr_Animation_Change_Sprite(spr_gb12_player_w_hurt);
-		else if (direction_facing == 1) scr_Animation_Change_Sprite(spr_gb12_player_n_hurt);
-		else if (direction_facing == 2) scr_Animation_Change_Sprite(spr_gb12_player_w_hurt);
-		else if (direction_facing == 3) scr_Animation_Change_Sprite(spr_gb12_player_s_hurt);
+		if (direction_facing == 0) scr_Animation_Change_Sprite(spr_gb12_player_unmasked_w_hurt);
+		else if (direction_facing == 1) scr_Animation_Change_Sprite(spr_gb12_player_unmasked_n_hurt);
+		else if (direction_facing == 2) scr_Animation_Change_Sprite(spr_gb12_player_unmasked_w_hurt);
+		else if (direction_facing == 3) scr_Animation_Change_Sprite(spr_gb12_player_unmasked_s_hurt);
 	}
 	// If we're not hurt, use normal sprites.
 	else
@@ -87,10 +87,10 @@ else
 		{
 			anim_loop = false;
 			anim_speed = 0.18;
-			if (direction_facing == 0) scr_Animation_Change_Sprite(spr_gb12_player_w_act);
-			else if (direction_facing == 1) scr_Animation_Change_Sprite(spr_gb12_player_n_act);
-			else if (direction_facing == 2) scr_Animation_Change_Sprite(spr_gb12_player_w_act);
-			else if (direction_facing == 3) scr_Animation_Change_Sprite(spr_gb12_player_s_act);
+			if (direction_facing == 0) scr_Animation_Change_Sprite(spr_gb12_player_unmasked_w_act);
+			else if (direction_facing == 1) scr_Animation_Change_Sprite(spr_gb12_player_unmasked_n_act);
+			else if (direction_facing == 2) scr_Animation_Change_Sprite(spr_gb12_player_unmasked_w_act);
+			else if (direction_facing == 3) scr_Animation_Change_Sprite(spr_gb12_player_unmasked_s_act);
 			if (anim_looped != 0) action = 0;
 		}
 	}

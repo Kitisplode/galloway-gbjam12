@@ -15,3 +15,7 @@ axis_max_speed = r3(200, 200, 1200);
 
 movement_collision = false;
 damage = 0;
+
+after_effect_active = true;
+after_effect_sprite = spr_gb12_player_item_mask_shot_effect;
+after_effect_time = 0.1;
