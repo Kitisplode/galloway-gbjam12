@@ -50,7 +50,6 @@
     {"name":"rm_gbjam_splash_galloway","order":3,"path":"rooms/rm_gbjam_splash_galloway/rm_gbjam_splash_galloway.yy",},
     {"name":"rm_gbjam_splash_gbjam","order":4,"path":"rooms/rm_gbjam_splash_gbjam/rm_gbjam_splash_gbjam.yy",},
     {"name":"rm_gbjam_splash_title","order":5,"path":"rooms/rm_gbjam_splash_title/rm_gbjam_splash_title.yy",},
-    {"name":"rm_gbjam_tower_00","order":3,"path":"rooms/rm_gbjam_tower_00/rm_gbjam_tower_00.yy",},
     {"name":"rm_gbjam_tower_01","order":1,"path":"rooms/rm_gbjam_tower_01/rm_gbjam_tower_01.yy",},
     {"name":"sh_outline","order":1,"path":"shaders/sh_outline/sh_outline.yy",},
     {"name":"mus_gbjam12_cutscene","order":4,"path":"sounds/mus_gbjam12_cutscene/mus_gbjam12_cutscene.yy",},
