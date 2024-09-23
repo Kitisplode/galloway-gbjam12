@@ -8,6 +8,8 @@ if (instance_number(obj_main_graphics) > 1)
     exit;
 }
 
+display_set_gui_size(160, 144);
+
 // Greyscale
 palette[0,0] = make_color_rgb(216,216,216);
 palette[0,1] = make_color_rgb(151,151,151);
