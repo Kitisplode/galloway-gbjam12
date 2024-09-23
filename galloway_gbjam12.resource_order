@@ -52,6 +52,7 @@
     {"name":"mus_gbjam12_escape_loop","order":2,"path":"sounds/mus_gbjam12_escape_loop/mus_gbjam12_escape_loop.yy",},
     {"name":"mus_gbjam12_extra","order":5,"path":"sounds/mus_gbjam12_extra/mus_gbjam12_extra.yy",},
     {"name":"mus_gbjam12_game_over","order":3,"path":"sounds/mus_gbjam12_game_over/mus_gbjam12_game_over.yy",},
+    {"name":"snd_gbjam12_door_open","order":1,"path":"sounds/snd_gbjam12_door_open/snd_gbjam12_door_open.yy",},
     {"name":"spr_block_enemy_only","order":5,"path":"sprites/spr_block_enemy_only/spr_block_enemy_only.yy",},
     {"name":"spr_block_switch_vanish","order":1,"path":"sprites/spr_block_switch_vanish/spr_block_switch_vanish.yy",},
     {"name":"spr_block","order":2,"path":"sprites/spr_block/spr_block.yy",},

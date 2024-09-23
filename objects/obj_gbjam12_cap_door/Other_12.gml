@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-velocity[2] = 250;
+active = true;

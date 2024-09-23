@@ -549,6 +549,7 @@
     {"id":{"name":"mus_gbjam12_main","path":"sounds/mus_gbjam12_main/mus_gbjam12_main.yy",},},
     {"id":{"name":"snd_gbjam12_button_off","path":"sounds/snd_gbjam12_button_off/snd_gbjam12_button_off.yy",},},
     {"id":{"name":"snd_gbjam12_button_on","path":"sounds/snd_gbjam12_button_on/snd_gbjam12_button_on.yy",},},
+    {"id":{"name":"snd_gbjam12_door_open","path":"sounds/snd_gbjam12_door_open/snd_gbjam12_door_open.yy",},},
     {"id":{"name":"snd_gbjam12_enemy_dead","path":"sounds/snd_gbjam12_enemy_dead/snd_gbjam12_enemy_dead.yy",},},
     {"id":{"name":"snd_gbjam12_enemy_hurt","path":"sounds/snd_gbjam12_enemy_hurt/snd_gbjam12_enemy_hurt.yy",},},
     {"id":{"name":"snd_gbjam12_player_cap","path":"sounds/snd_gbjam12_player_cap/snd_gbjam12_player_cap.yy",},},
@@ -637,6 +638,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_gbjam_courtyard","path":"rooms/rm_gbjam_courtyard/rm_gbjam_courtyard.yy",},},
+    {"roomId":{"name":"rm_gbjam_tower_01","path":"rooms/rm_gbjam_tower_01/rm_gbjam_tower_01.yy",},},
+    {"roomId":{"name":"rm_gbjam_boss","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},},
     {"roomId":{"name":"rm_gbjam_01","path":"rooms/rm_gbjam_01/rm_gbjam_01.yy",},},
     {"roomId":{"name":"rm_gbjam_02","path":"rooms/rm_gbjam_02/rm_gbjam_02.yy",},},
     {"roomId":{"name":"rm_gbjam_03","path":"rooms/rm_gbjam_03/rm_gbjam_03.yy",},},
@@ -644,8 +647,6 @@
     {"roomId":{"name":"rm_gbjam_splash_galloway","path":"rooms/rm_gbjam_splash_galloway/rm_gbjam_splash_galloway.yy",},},
     {"roomId":{"name":"rm_gbjam_splash_gbjam","path":"rooms/rm_gbjam_splash_gbjam/rm_gbjam_splash_gbjam.yy",},},
     {"roomId":{"name":"rm_gbjam_splash_title","path":"rooms/rm_gbjam_splash_title/rm_gbjam_splash_title.yy",},},
-    {"roomId":{"name":"rm_gbjam_boss","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},},
-    {"roomId":{"name":"rm_gbjam_tower_01","path":"rooms/rm_gbjam_tower_01/rm_gbjam_tower_01.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

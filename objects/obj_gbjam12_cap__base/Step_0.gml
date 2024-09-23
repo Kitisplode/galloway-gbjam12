@@ -73,6 +73,15 @@ if (!paused)
 	{
 		event_user(0);
 	}
+	
+	if (can_act && scr_Input_Read(id_input, input_act, 1))
+	{
+		event_user(2);
+	}
+	else
+	{
+		event_user(3);
+	}
 }
 
 // Inherit the parent event

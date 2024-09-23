@@ -3,5 +3,3 @@
 
 // Inherit the parent event
 event_inherited();
-
-scr_darkness_add_light(id, 24);

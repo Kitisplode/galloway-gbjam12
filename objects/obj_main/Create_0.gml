@@ -61,8 +61,8 @@ enum TRANSITION_PAUSE
 enum OBJECT_DEPTHS
 {
 	TRANSITION = -99999,
-	HUD = -700,
-	EFFECT = -600,
+	HUD = -9000,
+	EFFECT = -8000,
 	PLAYER = -500,
 	ENEMY = -100
 };
@@ -93,6 +93,7 @@ global.player_spawn_y = NaN;
 global.player_spawn_z = NaN;
 global.player_spawn_direction = 270;
 global.player_spawn_index = obj_gbjam12_player;
+global.player_has_mask = true;
 
 global.start_room = room;
 global.active_room = -1;
