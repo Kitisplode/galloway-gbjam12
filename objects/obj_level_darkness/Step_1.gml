@@ -4,40 +4,47 @@
 // Inherit the parent event
 event_inherited();
 
-if (active_room == id)
+if (!global.player_has_mask)
 {
-	if (instance_exists(obj_room_region))
-	{
-		var _temp_id = instance_nearest(x,y, obj_room_region);
-		//if (_temp_id != noone) active_room = _temp_id;
-		active_room = _temp_id;
-	}
+	image_alpha = 0;
 }
-
-if (active_room != id && instance_exists(active_room))
+else
 {
-	if (active_room != global.active_room)
+	if (active_room == id)
 	{
-		if (!first_check)
+		if (instance_exists(obj_room_region))
 		{
-			image_alpha = 0;
-			first_check = true;
-		}
-		if (image_alpha > 0)
-		{
-			image_alpha = max(image_alpha - scr_get_tick_length() * 2, 0);
+			var _temp_id = instance_nearest(x,y, obj_room_region);
+			//if (_temp_id != noone) active_room = _temp_id;
+			active_room = _temp_id;
 		}
 	}
-	else
+
+	if (active_room != id && instance_exists(active_room))
 	{
-		if (!first_check)
+		if (active_room != global.active_room)
 		{
-			image_alpha = 1.1;
-			first_check = true;
+			if (!first_check)
+			{
+				image_alpha = 0;
+				first_check = true;
+			}
+			if (image_alpha > 0)
+			{
+				image_alpha = max(image_alpha - scr_get_tick_length() * 2, 0);
+			}
 		}
-		if (image_alpha < 1.1)
+		else
 		{
-			image_alpha = min(image_alpha + scr_get_tick_length() * 2, 1.1);
+			if (!first_check)
+			{
+				image_alpha = 1.1;
+				first_check = true;
+			}
+			if (image_alpha < 1.1)
+			{
+				image_alpha = min(image_alpha + scr_get_tick_length() * 2, 1.1);
+			}
 		}
 	}
 }

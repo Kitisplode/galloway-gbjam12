@@ -1,9 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Inherit the parent event
 event_inherited();
 
-phase = 0;
-
-hp = 1;
-hp_max = 1;
+shots_fired = false;

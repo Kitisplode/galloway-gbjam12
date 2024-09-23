@@ -13,8 +13,8 @@
     "path":"folders/Objects/Game Objects/gbjam12/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"par_game_object",
-    "path":"objects/par_game_object/par_game_object.yy",
+    "name":"obj_gbjam12_en__base",
+    "path":"objects/obj_gbjam12_en__base/obj_gbjam12_en__base.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

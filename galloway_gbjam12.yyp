@@ -120,7 +120,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.800.0.618",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"galloway_gbjam12",
   "resources":[
@@ -166,6 +166,7 @@
     {"id":{"name":"obj_gbjam12_player_item","path":"objects/obj_gbjam12_player_item/obj_gbjam12_player_item.yy",},},
     {"id":{"name":"obj_gbjam12_player_spawner","path":"objects/obj_gbjam12_player_spawner/obj_gbjam12_player_spawner.yy",},},
     {"id":{"name":"obj_gbjam12_player","path":"objects/obj_gbjam12_player/obj_gbjam12_player.yy",},},
+    {"id":{"name":"obj_gbjam12_princess","path":"objects/obj_gbjam12_princess/obj_gbjam12_princess.yy",},},
     {"id":{"name":"obj_input","path":"objects/obj_input/obj_input.yy",},},
     {"id":{"name":"obj_level_button","path":"objects/obj_level_button/obj_level_button.yy",},},
     {"id":{"name":"obj_level_darkness","path":"objects/obj_level_darkness/obj_level_darkness.yy",},},
@@ -611,6 +612,7 @@
     {"id":{"name":"spr_gb12_level_gravestone","path":"sprites/spr_gb12_level_gravestone/spr_gb12_level_gravestone.yy",},},
     {"id":{"name":"spr_gb12_level_knight","path":"sprites/spr_gb12_level_knight/spr_gb12_level_knight.yy",},},
     {"id":{"name":"spr_gb12_level_magic_circle","path":"sprites/spr_gb12_level_magic_circle/spr_gb12_level_magic_circle.yy",},},
+    {"id":{"name":"spr_gb12_level_reaper_bridge","path":"sprites/spr_gb12_level_reaper_bridge/spr_gb12_level_reaper_bridge.yy",},},
     {"id":{"name":"spr_gb12_level_switch","path":"sprites/spr_gb12_level_switch/spr_gb12_level_switch.yy",},},
     {"id":{"name":"spr_gb12_level_throne","path":"sprites/spr_gb12_level_throne/spr_gb12_level_throne.yy",},},
     {"id":{"name":"spr_gb12_level_tileset","path":"sprites/spr_gb12_level_tileset/spr_gb12_level_tileset.yy",},},
