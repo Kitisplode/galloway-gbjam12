@@ -18,7 +18,6 @@
     {"name":"inst_5AF2F066","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},
     {"name":"inst_1818CB2A","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},
     {"name":"inst_628CA604","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},
-    {"name":"inst_1F572ACE","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},
   ],
   "isDnd":false,
   "layers":[
