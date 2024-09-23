@@ -140,7 +140,10 @@ function scr_darkness_add_light(_id, _light)
 		for (var _i = 0; _i < ds_list_size(obj_level_darkness.list_lights); _i++)
 		{
 			var _temp = ds_list_find_value(obj_level_darkness.list_lights, _i);
-			if (_temp._id == _id) return;
+			if (_temp._id == _id)
+			{
+				_temp._light = _light;
+			}
 		}
 		
 		ds_list_add(obj_level_darkness.list_lights, {_id: _id, _light: _light});

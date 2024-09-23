@@ -6,10 +6,13 @@ event_inherited();
 surface_id_1 = -1;
 surface_id_2 = -1;
 
-depth = -5000;
+depth = OBJECT_DEPTHS.HUD + 50;
 
 image_alpha = 1.1;
 
 list_lights = ds_list_create();
 
 light_cycle = 0;
+
+active_room = id;
+first_check = false;

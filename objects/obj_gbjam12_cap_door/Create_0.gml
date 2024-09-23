@@ -19,3 +19,6 @@ active = false;
 
 solid = true;
 ds_list_add(global.list_solids, id);
+
+sound_time = 0.5;
+sound_timer = 0;

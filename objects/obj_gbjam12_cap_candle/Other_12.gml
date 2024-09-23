@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
+action = 1;
 
-// Inherit the parent event
-event_inherited();
+scr_darkness_add_light(id, 32);
