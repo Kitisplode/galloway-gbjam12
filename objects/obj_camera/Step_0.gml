@@ -14,8 +14,8 @@ else
 	}
 	else
 	{
-		x = 80;
-		y = 72;
+		x = view_width_half;
+		y = view_height_half;
 	}
 }
 
@@ -27,11 +27,11 @@ else
 if (instance_exists(global.active_room))
 {
 	x = clamp(x_to - view_width_half, 
-	global.active_room.x - TILE_SIZE, 
-	global.active_room.x + global.active_room.sprite_width +TILE_SIZE - view_width_half*2);
+		global.active_room.x - TILE_SIZE, 
+		global.active_room.x + global.active_room.sprite_width + TILE_SIZE - view_width_half*2);
 	y = clamp(y_to - view_height_half, 
-	global.active_room.y - TILE_SIZE, 
-	global.active_room.y + global.active_room.sprite_height +TILE_SIZE - view_height_half*2);
+		global.active_room.y - TILE_SIZE, 
+		global.active_room.y + global.active_room.sprite_height + TILE_SIZE - view_height_half*2);
 }
 
 // Update screenshake
@@ -44,10 +44,11 @@ shake_remain = max(0, shake_remain - ((1 / shake_length) * shake_magnitude));
 if (!instance_exists(par_transition))
 {
 	camera_set_view_pos(cam, 
-	lerp(camera_get_view_x(cam),x,0.2), 
-	lerp(camera_get_view_y(cam),y,0.2));
+		lerp(camera_get_view_x(cam),x,0.2), 
+		lerp(camera_get_view_y(cam),y,0.2));
 }
 else
 {
+	cam = view_camera[0];
 	camera_set_view_pos(cam, x,y);
 }
