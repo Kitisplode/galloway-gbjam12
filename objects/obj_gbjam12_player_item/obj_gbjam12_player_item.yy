@@ -5,6 +5,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_gbjam12_player_item",
@@ -38,6 +39,9 @@
     "name":"spr_gb12_player_item_sword",
     "path":"sprites/spr_gb12_player_item_sword/spr_gb12_player_item_sword.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_gb12_player_item_sword",
+    "path":"sprites/spr_gb12_player_item_sword/spr_gb12_player_item_sword.yy",
+  },
   "visible":true,
 }

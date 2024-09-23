@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gb12_player_dead",
-    "path":"sprites/spr_gb12_player_dead/spr_gb12_player_dead.yy",
+    "name":"spr_gb12_player_unmasked_dead",
+    "path":"sprites/spr_gb12_player_unmasked_dead/spr_gb12_player_unmasked_dead.yy",
   },
   "spriteMaskId":null,
   "visible":true,

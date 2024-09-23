@@ -45,3 +45,5 @@ slide_around_blocks_distance = 8;
 ds_list_add(global.list_pushables, id);
 
 draw_2d_z = true;
+
+has_mask = true;

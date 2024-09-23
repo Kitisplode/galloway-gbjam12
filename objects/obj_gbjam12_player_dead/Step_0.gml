@@ -37,7 +37,7 @@ if (!instance_exists(par_transition))
 		if (timer <= 0)
 		{
 			phase = 2;
-			sprite_index = spr_gb12_player_dead;
+			sprite_index = spr_gb12_player_unmasked_dead;
 			anim_frame = 0;
 			anim_speed = 0.12;
 			anim_loop = false;
