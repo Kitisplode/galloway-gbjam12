@@ -1,6 +1,6 @@
 /// @description Change rooms
 // Only if the player is offscreen (and we're not already changing rooms ofc)
-if (scr_check_partly_off_screen(other, 0) && !instance_exists(par_transition))
+if (scr_check_off_screen(other, 8) && !instance_exists(par_transition))
 {
 	if (is_nan(next_x)) global.player_spawn_x = other.x;
 	else global.player_spawn_x = next_x;
@@ -12,4 +12,5 @@ if (scr_check_partly_off_screen(other, 0) && !instance_exists(par_transition))
 	else global.player_spawn_direction = next_direction;
 	global.player_spawn_index = other.object_index;
 	scr_transition_fade_to_color(next_room);
+	show_debug_message("room transition!");
 }

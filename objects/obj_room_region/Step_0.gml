@@ -7,6 +7,7 @@ if (id != global.active_room)
 		global.player_spawn_y = obj_base_player.position[1];//floor(obj_base_player.position[1] / 16) * 16 + 8;
 		global.player_spawn_z = obj_base_player.position[2] + 1;
 		global.player_spawn_direction = obj_base_player.direction;
+		//show_debug_message("room transition");
 	}
 }
 	

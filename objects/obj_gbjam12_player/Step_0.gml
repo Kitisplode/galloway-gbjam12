@@ -83,6 +83,17 @@ if (!paused)
 	// Sword
 	if (can_act && scr_Input_Read(id_input, input_act, 0))
 	{
+		/*
+		show_debug_message("player is at ({0},{1},{2})", item_id.x, item_id.y, item_id.z);
+		show_debug_message("player bbox: {0},{1},{2},{3}",
+			item_id.bbox_left,
+			item_id.bbox_right,
+	        item_id.bbox_top,
+			item_id.bbox_bottom,
+		);
+		show_debug_message("room size: {0},{1}", room_width, room_height);
+		show_debug_message("player offscreen: {0}", scr_check_off_screen(other, 12));
+		*/
 		action = 1;
 		play_sound(snd_gbjam12_player_sword, 1, 0, 1, 1,0.25);
 		if (item_id != id && instance_exists(item_id)) instance_destroy(item_id);

@@ -2,7 +2,9 @@
 var _temp_x = x;
 var _temp_y = y;
 var _temp_z = z;
-if (!is_nan(global.player_spawn_x) && !is_nan(global.player_spawn_y) && !is_nan(global.player_spawn_z))
+if (!is_nan(global.player_spawn_x) &&
+	!is_nan(global.player_spawn_y) &&
+	!is_nan(global.player_spawn_z))
 {
 	_temp_x = global.player_spawn_x;
 	_temp_y = global.player_spawn_y;
