@@ -9,6 +9,7 @@ if (!paused)
 		_temp_id.sprite_index = sprite_index;
 		_temp_id.image_xscale = image_xscale;
 		_temp_id.image_angle = image_angle;
+		_temp_id.has_mask = has_mask;
 		scr_transition_fade_to_color(rm_gbjam_gameover, 1);
 		instance_destroy();
 		exit;

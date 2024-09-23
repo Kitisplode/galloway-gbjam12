@@ -636,6 +636,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_gbjam_boss","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},},
     {"roomId":{"name":"rm_gbjam_courtyard","path":"rooms/rm_gbjam_courtyard/rm_gbjam_courtyard.yy",},},
     {"roomId":{"name":"rm_gbjam_01","path":"rooms/rm_gbjam_01/rm_gbjam_01.yy",},},
     {"roomId":{"name":"rm_gbjam_02","path":"rooms/rm_gbjam_02/rm_gbjam_02.yy",},},
@@ -644,7 +645,6 @@
     {"roomId":{"name":"rm_gbjam_splash_galloway","path":"rooms/rm_gbjam_splash_galloway/rm_gbjam_splash_galloway.yy",},},
     {"roomId":{"name":"rm_gbjam_splash_gbjam","path":"rooms/rm_gbjam_splash_gbjam/rm_gbjam_splash_gbjam.yy",},},
     {"roomId":{"name":"rm_gbjam_splash_title","path":"rooms/rm_gbjam_splash_title/rm_gbjam_splash_title.yy",},},
-    {"roomId":{"name":"rm_gbjam_boss","path":"rooms/rm_gbjam_boss/rm_gbjam_boss.yy",},},
     {"roomId":{"name":"rm_gbjam_tower_01","path":"rooms/rm_gbjam_tower_01/rm_gbjam_tower_01.yy",},},
   ],
   "templateType":"game",

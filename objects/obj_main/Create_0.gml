@@ -93,6 +93,7 @@ global.player_spawn_y = NaN;
 global.player_spawn_z = NaN;
 global.player_spawn_direction = 270;
 global.player_spawn_index = obj_gbjam12_player;
+global.player_has_mask = true;
 
 global.start_room = room;
 global.active_room = -1;

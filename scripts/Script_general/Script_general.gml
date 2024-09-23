@@ -209,4 +209,16 @@ function scr_reset_game()
 	global.player_spawn_z = NaN;
 	global.player_spawn_direction = 270;
 	global.player_spawn_index = obj_gbjam12_player;
+	ds_map_clear(global.map_switches);
+}
+
+function scr_continue_game()
+{
+	scr_transition_fade_to_color(global.start_room, 1, c_white);
+	global.player_hp = global.player_hp_max;
+	//global.player_spawn_x = NaN;
+	//global.player_spawn_y = NaN;
+	//global.player_spawn_z = NaN;
+	//global.player_spawn_direction = 270;
+	//global.player_spawn_index = obj_gbjam12_player;
 }
