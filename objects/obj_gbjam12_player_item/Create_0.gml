@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
+anim_loop = false;
 swing_direction = 1;
 swing_angle = 0;
 swung_amount = 0;

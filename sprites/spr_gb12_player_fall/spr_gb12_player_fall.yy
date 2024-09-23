@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Player",
-    "path":"folders/Sprites/gbjam12/Player.yy",
+    "name":"Masked",
+    "path":"folders/Sprites/gbjam12/Player/Masked.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

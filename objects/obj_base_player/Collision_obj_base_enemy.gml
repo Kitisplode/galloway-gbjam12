@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if (!invincible && invuln_timer <= 0 && other.damage > 0 && !other.stunned && other.hp > 0 && other.creator_id != id)
 {
+	if (other.position[2] > position[2] + z_height || other.position[2] + other.z_height < position[2]) exit;
 	if (hp > 0) hp -= other.damage;
 	global.player_hp -= other.damage;
 	invuln_timer = invuln_time;

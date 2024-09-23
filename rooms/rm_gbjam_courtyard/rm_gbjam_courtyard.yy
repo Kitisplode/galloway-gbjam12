@@ -260,8 +260,8 @@
   ],
   "name":"rm_gbjam_courtyard",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"gameplay",
+    "path":"folders/Rooms/gameplay.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

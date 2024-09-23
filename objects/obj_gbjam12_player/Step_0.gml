@@ -113,7 +113,9 @@ if (!paused)
 		play_sound(snd_gbjam12_player_fall, 1, 0, 0.5, 1,0);
 		visible = false;
 		
-		scr_effect_create(x,y, spr_gb12_player_fall, 0.15, OBJECT_DEPTHS.EFFECT);
+		//scr_effect_create(x,y, spr_gb12_player_fall, 0.15, OBJECT_DEPTHS.EFFECT);
+		var _temp_id = instance_create_depth(x,y, depth, obj_gbjam12_ef_enemy_fall);
+		_temp_id.sprite_index = sprite_index;
 		scr_transition_fade_to_color(room, 0.5, c_black, TRANSITION_PAUSE.GAME);
 	}
 }
