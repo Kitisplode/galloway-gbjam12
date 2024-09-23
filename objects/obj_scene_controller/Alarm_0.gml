@@ -1,0 +1,1 @@
+scr_transition_fade_to_color(next_room);
