@@ -26,3 +26,7 @@ destroy_timer = 5;
 fade_rate = 0.25;
 
 init = false;
+
+done_typing = false;
+
+update_strings = false;

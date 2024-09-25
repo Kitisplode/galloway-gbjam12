@@ -23,7 +23,7 @@ global.controls_debug_kill_enemies = ord("K");
 global.controls_debug_restart = ord("R");
 global.controls_debug_exit = vk_escape;
 global.controls_debug_fullscreen = vk_f4;
-global.controls_debug_pause = vk_space;
+global.controls_debug_pause = ord("P");//vk_space;
 
 global.enemy_kill_signal = false;
 
@@ -94,10 +94,12 @@ global.player_spawn_z = NaN;
 global.player_spawn_direction = 270;
 global.player_spawn_index = obj_gbjam12_player;
 global.player_has_mask = true;
+global.player_vanquished_reaper = false;
 
 global.start_room = room;
 global.active_room = -1;
 
 global.font_01 = font_add_sprite_ext(spr_font_01_outline, "!" + chr(34) + "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~ _[]\\", 0,1);
+global.font_02 = font_add_sprite_ext(spr_font, "!" + chr(34) + "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~ _[]\\", 0,1);
 
 randomize();

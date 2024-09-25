@@ -4,17 +4,17 @@
 // Inherit the parent event
 event_inherited();
 
+if (!init)
+{
+	event_user(0);
+	init = true;
+}
+
 // If we don't have any strings, just stop now.
 if (ds_list_size(string_list) <= 0)
 {
 	instance_destroy();
 	exit;
-}
-
-if (!init)
-{
-	event_user(0);
-	init = true;
 }
 
 // If we haven't made all of our string objects yet, try to make the next one.
@@ -47,13 +47,14 @@ if (ds_list_size(string_list) != ds_list_size(string_obj_list))
 // If we've typed out all of our text, start the destroy timer!
 else
 {
+	done_typing = true;
 	if (destroy_timer > -1)
 	{
 		//if (!destroy_timer_wait || (destroy_timer_wait && text_current_position >= temp_text_length))
 		{
 			if (destroy_timer > 0)
 			{
-				destroy_timer -= 1 / room_speed * global.game_speed_scale;	
+				destroy_timer -= scr_get_tick_length();	
 			}
 			if (destroy_timer <= 0)
 			{
@@ -67,4 +68,16 @@ else
 			}
 		}
 	}
+}
+
+if (update_strings)
+{
+	for (var _i = 0; _i < ds_list_size(string_obj_list); _i++)
+	{
+		var _temp_id = ds_list_find_value(string_obj_list, _i);
+		if (!instance_exists(_temp_id)) continue;
+		_temp_id.text_type_rate = text_type_rate;
+		_temp_id.update_characters = true;
+	}
+	update_strings = false;
 }

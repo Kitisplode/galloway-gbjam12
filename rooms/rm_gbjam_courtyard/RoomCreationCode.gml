@@ -1,0 +1,1 @@
+if (global.player_has_mask) scr_audio_play_song_no_fade(mus_gbjam12_extra);

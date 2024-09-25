@@ -21,6 +21,7 @@ global.music_target_id = -1;
 global.music_fade_enabled = false;
 global.music_fade_time = 2;
 global.music_fade_cutoff = 0.05;
+global.music_loop = true;
 
 global.music_priority = 30;
 
