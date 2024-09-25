@@ -41,7 +41,13 @@ y += random_range(-shake_remain, shake_remain);
 shake_remain = max(0, shake_remain - ((1 / shake_length) * shake_magnitude));
 
 // Set camera position
-if (!instance_exists(par_transition))
+if (room_get_name(room) == "rm_gbjam_splash_gbjam" ||
+	room_get_name(room) == "rm_gbjam_splash_title" ||
+	room_get_name(room) == "rm_gbjam_splash_galloway")
+{
+	//camera_set_view_pos(cam, x,y);
+}
+else if (!instance_exists(par_transition))
 {
 	camera_set_view_pos(cam, 
 		lerp(camera_get_view_x(cam),x,0.2), 
