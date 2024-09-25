@@ -23,6 +23,7 @@ if (!paused)
 					var _dir = point_direction(position[0],position[1], _reaper.position[0], _reaper.position[1]);
 					_temp_id.velocity[0] = cos(degtorad(_dir)) * 100;
 					_temp_id.velocity[1] = -sin(degtorad(_dir)) * 100;
+					_temp_id.damage = 0;
 					play_sound(snd_gbjam12_princess_shoot, 1, 0, 1, 1, 0.5);
 					sprite_index = spr_gb12_npc_princess_n_act;
 					shot_timer = shot_time;

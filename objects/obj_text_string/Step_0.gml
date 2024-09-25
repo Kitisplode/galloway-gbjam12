@@ -55,6 +55,7 @@ if (!global.paused || not_affected_by_pause)
 				temp_did_we_type = true;
 				var temp_text_ID = instance_create_depth(x + cursor_pos_x, y + cursor_pos_y, depth, obj_text);
 				temp_text_ID.text = temp_text;
+				temp_text_ID.font = font;
 				//temp_text_ID.halign = halign;
 				//temp_text_ID.valign = valign;
 				temp_text_ID.image_blend = image_blend;
@@ -68,7 +69,7 @@ if (!global.paused || not_affected_by_pause)
 			// If we typed anything, play a sound
 			if (temp_did_we_type && text_type_sound_ID > -1)
 			{
-				Play_Sound(text_type_sound_ID, 5, 0, 1, 1,0);
+				play_sound(text_type_sound_ID, 5, 0, 1, 1,0);
 			}
 		}
 	

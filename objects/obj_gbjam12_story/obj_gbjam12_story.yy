@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gbjam12_princess",
+  "%Name":"obj_gbjam12_story",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gbjam12_princess",
+  "name":"obj_gbjam12_story",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level",
-    "path":"folders/Objects/Game Objects/gbjam12/Level.yy",
+    "name":"_Other",
+    "path":"folders/Objects/Game Objects/gbjam12/_Other.yy",
   },
   "parentObjectId":{
     "name":"par_game_object",
@@ -34,12 +34,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gb12_npc_princess_n",
-    "path":"sprites/spr_gb12_npc_princess_n/spr_gb12_npc_princess_n.yy",
+    "name":"spr_gb12_scene_mask",
+    "path":"sprites/spr_gb12_scene_mask/spr_gb12_scene_mask.yy",
   },
-  "spriteMaskId":{
-    "name":"msk_gb12_player",
-    "path":"sprites/msk_gb12_player/msk_gb12_player.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

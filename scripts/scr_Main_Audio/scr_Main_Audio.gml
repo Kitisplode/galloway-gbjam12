@@ -69,6 +69,7 @@ function scr_audio_music_main()
 		if (!audio_is_playing(global.music_current_instance))
 		{
 			music_looped_times += 1;
+			
 			// If the song is in the intros list, start playing the associated loop now
 			var temp_intro_ID = ds_list_find_index(list_music_intros, global.music_current_id);
 			if (temp_intro_ID >= 0)
@@ -78,7 +79,8 @@ function scr_audio_music_main()
 			}
 			else
 			{
-				global.music_current_instance = play_music(global.music_current_id, global.music_priority, 1,1,1,0);
+				if (global.music_loop)
+					global.music_current_instance = play_music(global.music_current_id, global.music_priority, 0,1,1,0);
 			}
 		}
 	}
@@ -111,10 +113,11 @@ function scr_audio_add_song(_intro_index, _loop_index)
 	ds_list_add(list_music_loops, _loop_index);
 }
 
-function scr_audio_play_song_no_fade(_music_index)
+function scr_audio_play_song_no_fade(_music_index, _loop=true)
 {
 	global.music_target_id = _music_index;
 	global.music_fade_enabled = false;
+	global.music_loop = _loop;
 }
 
 //function scr_audio_play_song_fade_default(_music_index)
@@ -126,9 +129,10 @@ function scr_audio_play_song_no_fade(_music_index)
 //	return true;
 //}
 
-function scr_audio_play_song_fade(_music_index, _fade_time_in_seconds = 5)
+function scr_audio_play_song_fade(_music_index, _fade_time_in_seconds = 5, _loop=true)
 {
 	global.music_target_id = _music_index;
 	global.music_fade_enabled = true;
 	global.music_fade_time = _fade_time_in_seconds;
+	global.music_loop = _loop;
 }
