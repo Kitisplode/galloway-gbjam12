@@ -6,7 +6,7 @@ event_inherited();
 
 if (!global.player_has_mask)
 {
-	image_alpha = 0;
+	instance_destroy();
 }
 else
 {

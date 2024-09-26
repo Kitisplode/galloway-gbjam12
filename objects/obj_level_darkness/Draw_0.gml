@@ -24,7 +24,7 @@ if (surface_exists(surface_id_1) && surface_exists(surface_id_2))
 	//surface_set_target(surface_id_2);
 	//draw_clear_alpha(c_black,1);
 	//surface_reset_target();
-	
+	window_set_caption(ds_list_size(list_lights));
 	
 	for (var _i = 0; _i < ds_list_size(list_lights); _i++)
 	{

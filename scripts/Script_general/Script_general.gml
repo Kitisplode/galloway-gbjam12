@@ -143,6 +143,7 @@ function scr_darkness_add_light(_id, _light)
 			if (_temp._id == _id)
 			{
 				_temp._light = _light;
+				return;
 			}
 		}
 		
