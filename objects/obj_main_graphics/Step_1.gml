@@ -4,7 +4,7 @@
 application_surface_draw_enable(!shaders_on);
 if (shaders_on)
 {
-	if (keyboard_check_pressed(ord("Z")))
+	if (input_check_pressed("select"))
 	{
 		current_palette = (current_palette + 1) mod palette_count;
 		scr_set_gb_shader_colors(palette[current_palette,0],

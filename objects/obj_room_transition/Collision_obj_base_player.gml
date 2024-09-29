@@ -10,7 +10,7 @@ if (scr_check_off_screen(other, 8) && !instance_exists(par_transition))
 	else global.player_spawn_z = next_z;
 	if (is_nan(next_direction)) global.player_spawn_direction = other.direction;
 	else global.player_spawn_direction = next_direction;
-	global.player_spawn_index = other.object_index;
+	//global.player_spawn_index = other.object_index;
 	scr_transition_fade_to_color(next_room);
 	//show_debug_message("room transition: {0}", other.object_index);
 }

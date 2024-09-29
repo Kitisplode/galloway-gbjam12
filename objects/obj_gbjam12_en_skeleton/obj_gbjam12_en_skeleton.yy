@@ -40,8 +40,8 @@
     "path":"sprites/spr_gb12_en_skel_s/spr_gb12_en_skel_s.yy",
   },
   "spriteMaskId":{
-    "name":"msk_gb12_en_spider",
-    "path":"sprites/msk_gb12_en_spider/msk_gb12_en_spider.yy",
+    "name":"msk_gb12_player",
+    "path":"sprites/msk_gb12_player/msk_gb12_player.yy",
   },
   "visible":true,
 }

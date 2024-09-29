@@ -1,5 +1,8 @@
-if (keyboard_check_pressed(ord("Z"))) or (keyboard_check_pressed(ord("X")))
+if (input_check_pressed("a") || input_check_pressed("b"))
 {
 	scr_transition_fade_to_color(next_room);
-	if (next_room == rm_gbjam_courtyard) scr_audio_play_song_no_fade(mus_gbjam12_extra);
+}
+else if (input_check_pressed("start"))
+{
+	scr_transition_fade_to_color(rm_gbjam_story);
 }

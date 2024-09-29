@@ -1,7 +1,7 @@
 event_inherited();
 
 z = 0;
-z_height = 15;
+z_height = 32;
 
 solid = true;
 pushes_others = true;

@@ -227,3 +227,10 @@ function scr_continue_game()
 	//global.player_spawn_direction = 270;
 	//global.player_spawn_index = obj_gbjam12_player;
 }
+
+function scr_snap_pos_to_grid(_pos, _grid_size)
+{
+	return r3(round(_pos[0] / _grid_size) * _grid_size,
+			round(_pos[1] / _grid_size) * _grid_size,
+			round(_pos[2] / _grid_size) * _grid_size);
+}
